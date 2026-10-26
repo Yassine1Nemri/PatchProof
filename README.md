@@ -54,7 +54,7 @@ Greenbone / OpenVAS · Nessus Essentials · OWASP ZAP · FIRST EPSS · CISA KEV 
 
 The laboratory includes a Windows Server domain controller (**DC01**), Windows workstation (**WIN-CL**), Ubuntu/Flask web target (**WEB01**), and deliberately vulnerable **MS2**. Kali hosts the assessment tools.
 
-<details>
+<details open>
 <summary><strong>Greenbone / OpenVAS — MS2 baseline</strong></summary>
 
 ![Greenbone MS2 baseline](screenshots/openvas-ms2-baseline-dashboard.png)
@@ -63,7 +63,7 @@ The MS2 baseline export contained **70 severity-classified findings**. This is a
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Nessus Essentials — authenticated DC01 assessment</strong></summary>
 
 ![Nessus authenticated DC01 assessment](screenshots/nessus-dc01-authenticated.png)
