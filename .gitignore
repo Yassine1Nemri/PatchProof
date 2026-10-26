@@ -1,0 +1,11 @@
+.env
+.venv/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+*.before-phase7

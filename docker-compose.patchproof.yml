@@ -1,0 +1,32 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: patchproof-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: patchproof
+      POSTGRES_USER: patchproof
+      POSTGRES_PASSWORD: ${PATCHPROOF_DB_PASSWORD}
+
+    ports:
+      - "127.0.0.1:5433:5432"
+
+    volumes:
+      - patchproof-postgres-data:/var/lib/postgresql/data
+
+    networks:
+      - patchproof-net
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U patchproof -d patchproof"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  patchproof-postgres-data:
+
+networks:
+  patchproof-net:
+    name: patchproof-net

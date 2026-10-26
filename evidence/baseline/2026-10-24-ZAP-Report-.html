@@ -1,0 +1,2726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PatchProof - Web01 ZAP  baseline</title>
+<link
+	href="2026-10-24-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2026-10-24-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2026-10-24-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>PatchProof - Web01 ZAP  baseline</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2026-10-24-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Sat 24 Oct 2026, at 16:12:24</span>
+		</p>
+		<p>ZAP Version: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://172.16.220.137</span></li>
+						<li><span class="site">https://fonts.gstatic.com</span></li>
+						<li><span class="site">https://fonts.googleapis.com</span></li>
+						<li><span class="site">http://172.16.220.137:5000</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28.6%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(42.9%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(28.6%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(42.9%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(14.3%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(14.3%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(42.9%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57.1%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="3">Site</th>
+							<th scope="row">https://fonts.gstatic.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">https://fonts.googleapis.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">http://172.16.220.137:5000</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(42.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Cross-Domain Misconfiguration</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(42.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(42.9%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57.1%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Retrieved from Cache</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(57.1%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>7</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Reason</th>
+						<th scope="col">Site</th>
+						<th scope="col">Description</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-1">
+							<div>Low</div>
+						</td>
+						<td>
+							<div>Warning</div>
+						</td>
+						<td>
+							<div></div>
+						</td>
+						<td>
+							<div>ZAP errors logged - see the zap.log file for details</div>
+						</td>
+						<td align="center">
+							<div>5   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>33 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>66 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>1   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137:5000</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>61 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137:5000</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>1 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137:5000</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>37 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/css</div>
+						</td>
+						<td align="center">
+							<div>33 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>66 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137:5000</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>http://172.16.220.137:5000</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>3   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.googleapis.com</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.googleapis.com</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/css</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.googleapis.com</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.googleapis.com</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>1   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.googleapis.com</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.gstatic.com</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.gstatic.com</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type font/woff2</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.gstatic.com</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.gstatic.com</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>3   </div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Info</div>
+						</td>
+						<td>
+							<div>Informational</div>
+						</td>
+						<td>
+							<div>https://fonts.gstatic.com</div>
+						</td>
+						<td>
+							<div>Percentage of slow responses</div>
+						</td>
+						<td align="center">
+							<div>100 %</div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://172.16.220.137:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://172.16.220.137:5000/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (333 bytes)</summary>
+				
+				<pre><code>GET http://172.16.220.137:5000/ HTTP/1.1
+host: 172.16.220.137:5000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (189 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.3
+Date: Sat, 24 Oct 2026 14:42:13 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 3703
+Vary: Cookie
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3703 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;title&gt;Overview · WebSec Lab&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;topbar&quot;&gt;
+    &lt;a class=&quot;brand&quot; href=&quot;/&quot;&gt;&lt;span class=&quot;brand-mark&quot;&gt;W&lt;/span&gt;&lt;span&gt;WebSec &lt;b&gt;Lab&lt;/b&gt;&lt;small&gt;OWASP PRACTICE TARGET&lt;/small&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;nav aria-label=&quot;Main navigation&quot;&gt;
+      &lt;a class=&quot;nav-link active&quot; href=&quot;/&quot;&gt;Overview&lt;/a&gt;
+      &lt;a class=&quot;nav-link &quot; href=&quot;/login&quot;&gt;Login&lt;/a&gt;
+      &lt;a class=&quot;nav-link &quot; href=&quot;/search&quot;&gt;Search&lt;/a&gt;
+      &lt;a class=&quot;nav-link &quot; href=&quot;/profiles&quot;&gt;Profiles&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;div class=&quot;session-pill&quot;&gt;&lt;span class=&quot;pulse&quot;&gt;&lt;/span&gt;Guest session&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;main class=&quot;container&quot;&gt;
+    &lt;div class=&quot;lab-warning&quot;&gt;&lt;span class=&quot;warning-icon&quot;&gt;!&lt;/span&gt;&lt;span&gt;&lt;strong&gt;Intentionally vulnerable training app&lt;/strong&gt; · Use only on your isolated lab network. Never expose this target to the public internet.&lt;/span&gt;&lt;/div&gt;
+    
+      
+    
+    
+&lt;section class=&quot;hero&quot;&gt;
+  &lt;div class=&quot;eyebrow&quot;&gt;&lt;span class=&quot;eyebrow-dot&quot;&gt;&lt;/span&gt; LOCAL SECURITY TRAINING ENVIRONMENT&lt;/div&gt;
+  &lt;h1&gt;Learn to find the&lt;br&gt;&lt;span&gt;weak spots.&lt;/span&gt;&lt;/h1&gt;
+  &lt;p class=&quot;hero-copy&quot;&gt;A deliberately vulnerable mini web app for practicing OWASP testing with Burp Suite, OWASP ZAP, or manual requests. Four simple pages. Realistic findings. Fake data.&lt;/p&gt;
+  &lt;div class=&quot;hero-actions&quot;&gt;&lt;a class=&quot;button primary&quot; href=&quot;/login&quot;&gt;Start testing &lt;span&gt;→&lt;/span&gt;&lt;/a&gt;&lt;a class=&quot;button secondary&quot; href=&quot;/search&quot;&gt;Open search&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;hero-meta&quot;&gt;&lt;span&gt;&lt;b class=&quot;dot-green&quot;&gt;&lt;/b&gt; Flask target&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;dot-blue&quot;&gt;&lt;/b&gt; SQLite database&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;dot-amber&quot;&gt;&lt;/b&gt; Lab only&lt;/span&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;section-heading&quot;&gt;&lt;div&gt;&lt;div class=&quot;eyebrow&quot;&gt;TESTING MENU&lt;/div&gt;&lt;h2&gt;Choose a test surface&lt;/h2&gt;&lt;/div&gt;&lt;span class=&quot;subtle&quot;&gt;4 pages · beginner friendly&lt;/span&gt;&lt;/section&gt;
+&lt;div class=&quot;feature-grid&quot;&gt;
+  &lt;a class=&quot;feature-card&quot; href=&quot;/login&quot;&gt;&lt;div class=&quot;card-top&quot;&gt;&lt;span class=&quot;icon-box violet&quot;&gt;01&lt;/span&gt;&lt;span class=&quot;tag tag-violet&quot;&gt;A03 · A07&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;Authentication&lt;/h3&gt;&lt;p&gt;Test the login flow, SQL injection, weak credentials, and error handling.&lt;/p&gt;&lt;span class=&quot;card-link&quot;&gt;Open login &lt;b&gt;↗&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;a class=&quot;feature-card&quot; href=&quot;/search&quot;&gt;&lt;div class=&quot;card-top&quot;&gt;&lt;span class=&quot;icon-box blue&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;tag tag-blue&quot;&gt;A03&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;Search input&lt;/h3&gt;&lt;p&gt;Explore reflected XSS and SQL injection through a search parameter.&lt;/p&gt;&lt;span class=&quot;card-link&quot;&gt;Open search &lt;b&gt;↗&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;a class=&quot;feature-card&quot; href=&quot;/profiles&quot;&gt;&lt;div class=&quot;card-top&quot;&gt;&lt;span class=&quot;icon-box amber&quot;&gt;03&lt;/span&gt;&lt;span class=&quot;tag tag-amber&quot;&gt;A01&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;User profiles&lt;/h3&gt;&lt;p&gt;Check for broken access control by changing the numeric profile ID.&lt;/p&gt;&lt;span class=&quot;card-link&quot;&gt;Browse profiles &lt;b&gt;↗&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;section class=&quot;learning-panel&quot;&gt;
+  &lt;div&gt;&lt;div class=&quot;eyebrow&quot;&gt;SUGGESTED WORKFLOW&lt;/div&gt;&lt;h2&gt;Test like an application security analyst.&lt;/h2&gt;&lt;p&gt;Intercept a request, change one input at a time, compare responses, and document the impact. Use only the fictional records shipped with this app.&lt;/p&gt;&lt;/div&gt;
+  &lt;div class=&quot;workflow-list&quot;&gt;&lt;div&gt;&lt;span&gt;1&lt;/span&gt;&lt;p&gt;&lt;b&gt;Discover&lt;/b&gt;&lt;small&gt;Browse the four pages and map the inputs.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;2&lt;/span&gt;&lt;p&gt;&lt;b&gt;Manipulate&lt;/b&gt;&lt;small&gt;Test input handling and access controls.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;3&lt;/span&gt;&lt;p&gt;&lt;b&gt;Report&lt;/b&gt;&lt;small&gt;Record evidence, impact, and a remediation.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+    &lt;footer&gt;&lt;span&gt;WEBSEC LAB &lt;i&gt;•&lt;/i&gt; FICTIONAL TEST DATA ONLY&lt;/span&gt;&lt;span&gt;Built for authorized security testing&lt;/span&gt;&lt;/footer&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://fonts.googleapis.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Cross-Domain Misconfiguration</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/264.html">CWE-264</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (457 bytes)</summary>
+				
+				<pre><code>GET https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap HTTP/1.1
+host: fonts.googleapis.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://172.16.220.137:5000/
+Sec-Fetch-Dest: style
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: cross-site
+Priority: u=2
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (704 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: text/css; charset=utf-8
+Access-Control-Allow-Origin: *
+Timing-Allow-Origin: *
+Link: &lt;https://fonts.gstatic.com&gt;; rel=preconnect; crossorigin
+Strict-Transport-Security: max-age=31536000
+Expires: Sat, 24 Oct 2026 14:42:14 GMT
+Date: Sat, 24 Oct 2026 14:42:14 GMT
+Cache-Control: private, max-age=86400
+Cross-Origin-Resource-Policy: cross-origin
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+content-length: 12400
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (12400 bytes)</summary>
+				
+				<pre><code>/* latin-ext */
+@font-face {
+  font-family: &#39;DM Mono&#39;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthSQBLyM.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;DM Mono&#39;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBA.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;DM Mono&#39;;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvumzEY2tbZX9.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;DM Mono&#39;;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmmono/v16/aFTR7PB1QTsUX8KYvumzEYOtbQ.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggqxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggOxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggSxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggixSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggmxSuXd.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Manrope&#39;;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Access-Control-Allow-Origin: *</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p>
+
+<p>Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://172.16.220.137:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://172.16.220.137:5000/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (333 bytes)</summary>
+				
+				<pre><code>GET http://172.16.220.137:5000/ HTTP/1.1
+host: 172.16.220.137:5000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (189 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.3
+Date: Sat, 24 Oct 2026 14:42:13 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 3703
+Vary: Cookie
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3703 bytes)</summary>
+				
+				<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;title&gt;Overview · WebSec Lab&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;topbar&quot;&gt;
+    &lt;a class=&quot;brand&quot; href=&quot;/&quot;&gt;&lt;span class=&quot;brand-mark&quot;&gt;W&lt;/span&gt;&lt;span&gt;WebSec &lt;b&gt;Lab&lt;/b&gt;&lt;small&gt;OWASP PRACTICE TARGET&lt;/small&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;nav aria-label=&quot;Main navigation&quot;&gt;
+      &lt;a class=&quot;nav-link active&quot; href=&quot;/&quot;&gt;Overview&lt;/a&gt;
+      &lt;a class=&quot;nav-link &quot; href=&quot;/login&quot;&gt;Login&lt;/a&gt;
+      &lt;a class=&quot;nav-link &quot; href=&quot;/search&quot;&gt;Search&lt;/a&gt;
+      &lt;a class=&quot;nav-link &quot; href=&quot;/profiles&quot;&gt;Profiles&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;div class=&quot;session-pill&quot;&gt;&lt;span class=&quot;pulse&quot;&gt;&lt;/span&gt;Guest session&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;main class=&quot;container&quot;&gt;
+    &lt;div class=&quot;lab-warning&quot;&gt;&lt;span class=&quot;warning-icon&quot;&gt;!&lt;/span&gt;&lt;span&gt;&lt;strong&gt;Intentionally vulnerable training app&lt;/strong&gt; · Use only on your isolated lab network. Never expose this target to the public internet.&lt;/span&gt;&lt;/div&gt;
+    
+      
+    
+    
+&lt;section class=&quot;hero&quot;&gt;
+  &lt;div class=&quot;eyebrow&quot;&gt;&lt;span class=&quot;eyebrow-dot&quot;&gt;&lt;/span&gt; LOCAL SECURITY TRAINING ENVIRONMENT&lt;/div&gt;
+  &lt;h1&gt;Learn to find the&lt;br&gt;&lt;span&gt;weak spots.&lt;/span&gt;&lt;/h1&gt;
+  &lt;p class=&quot;hero-copy&quot;&gt;A deliberately vulnerable mini web app for practicing OWASP testing with Burp Suite, OWASP ZAP, or manual requests. Four simple pages. Realistic findings. Fake data.&lt;/p&gt;
+  &lt;div class=&quot;hero-actions&quot;&gt;&lt;a class=&quot;button primary&quot; href=&quot;/login&quot;&gt;Start testing &lt;span&gt;→&lt;/span&gt;&lt;/a&gt;&lt;a class=&quot;button secondary&quot; href=&quot;/search&quot;&gt;Open search&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;hero-meta&quot;&gt;&lt;span&gt;&lt;b class=&quot;dot-green&quot;&gt;&lt;/b&gt; Flask target&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;dot-blue&quot;&gt;&lt;/b&gt; SQLite database&lt;/span&gt;&lt;span&gt;&lt;b class=&quot;dot-amber&quot;&gt;&lt;/b&gt; Lab only&lt;/span&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;section-heading&quot;&gt;&lt;div&gt;&lt;div class=&quot;eyebrow&quot;&gt;TESTING MENU&lt;/div&gt;&lt;h2&gt;Choose a test surface&lt;/h2&gt;&lt;/div&gt;&lt;span class=&quot;subtle&quot;&gt;4 pages · beginner friendly&lt;/span&gt;&lt;/section&gt;
+&lt;div class=&quot;feature-grid&quot;&gt;
+  &lt;a class=&quot;feature-card&quot; href=&quot;/login&quot;&gt;&lt;div class=&quot;card-top&quot;&gt;&lt;span class=&quot;icon-box violet&quot;&gt;01&lt;/span&gt;&lt;span class=&quot;tag tag-violet&quot;&gt;A03 · A07&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;Authentication&lt;/h3&gt;&lt;p&gt;Test the login flow, SQL injection, weak credentials, and error handling.&lt;/p&gt;&lt;span class=&quot;card-link&quot;&gt;Open login &lt;b&gt;↗&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;a class=&quot;feature-card&quot; href=&quot;/search&quot;&gt;&lt;div class=&quot;card-top&quot;&gt;&lt;span class=&quot;icon-box blue&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;tag tag-blue&quot;&gt;A03&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;Search input&lt;/h3&gt;&lt;p&gt;Explore reflected XSS and SQL injection through a search parameter.&lt;/p&gt;&lt;span class=&quot;card-link&quot;&gt;Open search &lt;b&gt;↗&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;a class=&quot;feature-card&quot; href=&quot;/profiles&quot;&gt;&lt;div class=&quot;card-top&quot;&gt;&lt;span class=&quot;icon-box amber&quot;&gt;03&lt;/span&gt;&lt;span class=&quot;tag tag-amber&quot;&gt;A01&lt;/span&gt;&lt;/div&gt;&lt;h3&gt;User profiles&lt;/h3&gt;&lt;p&gt;Check for broken access control by changing the numeric profile ID.&lt;/p&gt;&lt;span class=&quot;card-link&quot;&gt;Browse profiles &lt;b&gt;↗&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;section class=&quot;learning-panel&quot;&gt;
+  &lt;div&gt;&lt;div class=&quot;eyebrow&quot;&gt;SUGGESTED WORKFLOW&lt;/div&gt;&lt;h2&gt;Test like an application security analyst.&lt;/h2&gt;&lt;p&gt;Intercept a request, change one input at a time, compare responses, and document the impact. Use only the fictional records shipped with this app.&lt;/p&gt;&lt;/div&gt;
+  &lt;div class=&quot;workflow-list&quot;&gt;&lt;div&gt;&lt;span&gt;1&lt;/span&gt;&lt;p&gt;&lt;b&gt;Discover&lt;/b&gt;&lt;small&gt;Browse the four pages and map the inputs.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;2&lt;/span&gt;&lt;p&gt;&lt;b&gt;Manipulate&lt;/b&gt;&lt;small&gt;Test input handling and access controls.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;3&lt;/span&gt;&lt;p&gt;&lt;b&gt;Report&lt;/b&gt;&lt;small&gt;Record evidence, impact, and a remediation.&lt;/small&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+    &lt;footer&gt;&lt;span&gt;WEBSEC LAB &lt;i&gt;•&lt;/i&gt; FICTIONAL TEST DATA ONLY&lt;/span&gt;&lt;span&gt;Built for authorized security testing&lt;/span&gt;&lt;/footer&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://fonts.gstatic.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBA.woff2</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/319.html">CWE-319</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (474 bytes)</summary>
+				
+				<pre><code>GET https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBA.woff2 HTTP/1.1
+host: fonts.gstatic.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Origin: http://172.16.220.137:5000
+Connection: keep-alive
+Referer: https://fonts.googleapis.com/
+Sec-Fetch-Dest: font
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (815 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Content-Security-Policy-Report-Only: require-trusted-types-for &#39;script&#39;; report-uri https://csp.withgoogle.com/csp/apps-themes
+Cross-Origin-Resource-Policy: cross-origin
+Cross-Origin-Opener-Policy: same-origin; report-to=&quot;apps-themes&quot;
+Report-To: {&quot;group&quot;:&quot;apps-themes&quot;,&quot;max_age&quot;:2592000,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://csp.withgoogle.com/csp/report-to/apps-themes&quot;}]}
+Timing-Allow-Origin: *
+Content-Length: 14820
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 0
+Date: Sat, 24 Oct 2026 12:10:40 GMT
+Expires: Sun, 24 Oct 2027 12:10:40 GMT
+Cache-Control: public, max-age=31536000
+Last-Modified: Mon, 15 Sep 2025 17:10:03 GMT
+Content-Type: font/woff2
+Age: 9094
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (14820 bytes)</summary>
+				
+				<pre><code>wOF2     9ä     ,  9                       Xt`` n`	-
+¶@ +L 6$ &quot;=!q%lFÍn¹FQ2Zd$&quot;Ø8÷hÇÿ?å¸±àmÕO³,rË]¤Óèa&#39;OÄº!yåõ4&gt;jhõü3µ¡¦Aa³X¢í@ÔÐñÅãÆÜz»¾2¿¯TÓs&quot;å§ÞÇþ±ø[å&gt;|þ¿÷ª/R=yÖò9&quot;±Xb=ð	Í:ÍõOT	*­bp§8Bcä&lt;&lt;¿¿ø_ûÌ&lt;QJE$©_àÌ=ÏúyIÚÔW Å}4§%¢(q¿»Ü].ÉE/DH.Ðn&lt;U[KU&amp;T&#39;FÝJ&#39;VõçÞÎäcÏm{EÐ&amp;ëÈWµJZªÊï[³ªz¨NúkÌþE8é$óüP¨\uÐº±ò·¾îd`²bòÎ«(,pÿKWùÞ§î´9 6¢©´cÒ#sx%Ãn;ôõ9õw¥âÛhz
+ØVÈ!w&amp;K?ÛWå
+D2Á$;óíiîmÞf7É&#39;ÆæSJTÈ
+y&lt;×ïÝÿCíxxv@è¡c¹)ÞDü^[
+Ø&#39;¬À(¾· Î$¼¾&amp;(y×.ê+jªúK¦s^Ü&#39;nÏæïü.4ö`kRý1¯ÿOGJ
+i
+tu¼þòï××EÔ&lt;=&gt;?§ê&amp;ÊäÔ}ç¼ÿ	rið.@û{SÍö¿]ì	T¦ÎÎwwã¢aº\]QÚ¹µ«÷w±»±$°Ê¤@Ô e!ètò¤¡Î)%TÀx9Ë1u1©µsRK.Ë¾µõ©îsitàÙ±ÅoR:X¨ä¢ ÇcÉ÷ ¯-GFþÃ½¹¾`ÞTÄ4ËXdìö¸¿wÿì§Õh¦¥lIE} UÀìµ¯[SÀp
+ï/=a!.föG®whé*:ÜÞCPBBECQ¸1Êzõ&gt;ã!ç¼[jÄ dMsÄ?¿·²Z!nÌDS&amp;2nd¬@¤ÖvR,ìH°pÁ´¸¿Ò-PøaË¥àÊpvÚäIJièõ¶_§ÁO}ßÿÛú«Z|Åç½äcÅfKÓË&gt;MÚ`eweïÈÑÙòK!is»Ýí=nÔë®v² K©ëöÙaõ0èêÕ*.´uo|,tÉ­2Ê½mIÜ8À¿²Ã/~ôÅA!Û4	·ê¼½ïÓ¦ÅyápÔKwÒc¸³tåÒ M!æ÷¡¨&quot;iÄ¸2H×äÿÅ¿Äiq^¸ÅôõiÎx¢ò¾
+·&#39;P´1HcÒ3JâbJÜ&quot;®NøÃ_å&quot;¢©h+:å&quot;MÔBS|­ÍÛì¤}åß^[tCQä^§ûú÷L©÷ÃKÇ§.ýC$Ê	MÜItÞ`kiXU[I/ÊÌçëý*FP.P×!Y×£RBÛÇÎk`Z&amp;£¼¥g/zRæ¾\¸ä&#39;EÞ÷&#39;ùDÒ¢!
+1g´8â¡ YÌÉKfWWzù^&lt;ÄÜ½Hk%{;&amp; BH©Àp ¥½ú@wMw&gt;ü?û%P»&#39;¶âçæ ë7ÀXÝ¨&gt;=y¾¿tÀ_&gt;9þ$z¾·{wÈ83S¶ÌEL:Åä1Ly¦¦Î*aÿ÷T@!gt4W
+ÖðÜf%ÖÒÀßsÉ^&#39;?ÄQÕT¬óïðïêoáÍÂã? /Ûs4&lt;ïÏÃöA@;$C1 ±pb¹ëù?®j0¯ÝstéÖf[Õ:Ôªshß&amp;Vl8páWn¡
+4Õèj°HHÉÈ)héèÑ©ß©Ò3aÆ-;ö¸qçÁ7_¡ÂE-F¢$ÉR¤ëñR¯cK­Ø°jÓ+×&gt;p#Ã´n}ä#¥Ê¼ãÌï)iF¥
+UaÌH°`Ç§H±U*Q-Rà.&gt;.§&lt;¦¡¤¢f$ÖK+S6,Y±æÊ3æ|òã/X=AÄ/U4Oµ4eÔ¸	c@í6·áCÆø¶5¾f-÷Ï©îõ³¡ý­W&#39;+:õKÛ°ß¯¨Ò_Ñ#×S¢WcØ÷^A¾ûâÐÝ@ñ±ß£xô,UT&lt;4¼c¬Î »ÃKÅ^¶lH v_Z&lt;3!&lt;$ï%±ÅJRn`ü0&quot;X«Ð_2sÌðTyÉ±Êö¥É½KFìÑÊ»nW³_[Âs$Nè$ñ+xWÔPKø»Ï¾ä¢N½¦ùÀYHQ_ÝH§»±ÐáåÐð±RB}¡EñA¹E]B7ÉÉ_íQ|J7Ä¬{&#39;	¸ùRè¾ãUf °²ö°ñ®[S3,Äóãgaì¬âXÈ½jd»Ò¢s,Z@zC»ÇÖNâA JÄX;,
+È S!NJS;0Àß)¶è5¹½qH1ùîW-5&quot;x¶í|mÂP«Uvç@f¤£p´£
+`b&#39;)¨Ù¦ LÀÞ$5÷@-J^¢&amp;ÈÙv6c.÷EDµB1mßÝîÎlÑ»VÅ­OkS2îî&lt;zêÅL¢rµP^:5ØHÑè2JÙYÀ°±c·jíÛ&amp;!-ÕÎ¶z×&quot;sKxt÷p¢h¨/éø®é 
+ç-Øg_6M%sygµXhCß®éÆ«.ñvW¯ÃVòÈ&amp;þm÷êýgÈØ&quot;z{à®&gt;jnJY^Xäøg1h	R¬_#ùàQâgÞçÌ-ûoa&gt;Åö)LÉ×+¡²(rÖ,pD`IéûFóa&quot;-}pp¡ìA`
+!mLkâÔÈx+Ròmãr±	¾NF Ùì	Jö#C!H+$22
+¥¥+àA¨
+¹xõÁ1 ç.Csygßóªym^ÞóúÄ2ëm?(~&quot;rõR4xÈ,xÈ&lt;x(&quot;x(2ød´ª·¤ë-¨â[£R¬F¯n°	fåhh@Cà°Èþ}ädÜÈ´åD²/ÝthåI¨¯çîk_ÍH#&amp;LvAOÄïéaMpÐò@øpFø Ù_çÅÔÕ¥¿Rú UôÂDóhòÜja ¨ï*!1ñß 2FË¤^Ä§£PÓÜ	½ÅAòPÕwú.çøøxüaØµUtXØÙõ@´K+0®¤NpXµ·Ïý¬7:Í®«Û3õîû4.­û&#39;Ç¦ípú!ÚUãÝÜ»5#i&amp;+ã~X4%ÇÌ&gt;X¼°¶¡§3Ò¹Ï½J&quot;&quot;U7
+ñ&quot;D]ÒJ8ÝªÅZ`*z]&quot;C¯.¾7³a&amp;Òú@Ö8sÖ%YÞÔnrèJZekü39^HÖ¬ÊaM^24¿|A*û4§dÇýv4°eIUí ]mêhUËÔÔÅ§å¿SM=±ÞÀë½Ð06¶ÙÀÄbrCC{$ã°BdhÎ%~#dòw¬« 4 [É_F2æ=¬5ûb`ÊØ3fÏ½ÊÆMUaÉJ/ÆÙè«Ýº,t´°ðY¿áæÚ©®··g=µºa Ú¦S]ÈÖ®àï1Ô$3kzÂÖMÎ2paW ²7öåp$&quot;&quot;GóIàXÐÜìÂ §&quot;³$p.*¹X(\D®Àµ¨ü¦e8nqCîæÀ 7	¡`!&quot;ö| GÐp¢DC F@Õ)z5Ù­döä x=ÛÖÊgBRIµi&quot;lZÐy4zÄ0(G2JIB?óÅ¬`ó»È!AN	ýÂ¼áögx=Ã§ òKÖ?I|FßßÖ¼¹[cUe_[-!5êÑM3yÆO^û*FF·ÏcxõWtC5¤éóÚ(²´_ß ¯NôO`l|CxÉ+äv^rêuº5NéaÞBpvà¹R&lt;zÜÕiËð;Ä0ãYáî#Kõd|hÐ¤KFäo¹FB¢w+9àý&gt;DUàs¦qxzô÷o4¿ìWÇ\~ÙôêýÕlßøºÑ&#39;N7P+fäÓËÄÔ¨GHd!	#É:?è ÄzXA¢$¿$!Dñ¬¸5ÎÉ)«©MTÒ¯ÅÑúPÐ¾U?l7m$2UÖBÝ¾Öñð¨¨V¹í@Z´lEJeMàPmiÖÄ
+ªFéÔÐpt,í5j×¼ZtXH#¢á=z¦pÊñìÕ8Â]Y`¥6õÎÝ£z¢jjqwÂmmZsÀ5K5ÙóypAAÌóÉ(cY±m³DÅiÏ+±ô¢^7vdK4u(Éå$×TÁ)öJ±ïs¬m¥T4XszBeòÝu:Y»@&quot;&#39;d6ª¾Sô§1åz@Ùã;30{!Ê©xÎ#&amp;óy&lt;E%§è·Èxs#_ÀµÝtnö^l¯N­ò|Oº)¢Çæ$KÂ´néOðèö.&quot;C¨jEa
+:öEs¡viãxH3÷û ml¼o,ð/Í[Oå`þ4¤P¡Ãp_Uú!kr¿l«ÞTjõÆxÿì*Ò$@)0OâD~«dÐ$C7~¥&#39;QâËE ÅïYAD÷µ/,PÞÎù%ZgxAÏ 
+ìºie
+#)ÿ¤çý]3D2=á¬pZVyX4ô´k§Aßfd.O¦×Ë4p_¯ÞâðsÁdMÜÉ\juSJ)è¾ÙZ}_×è§ÄcÓ ë2P·.ETXLgì3Èeºät8c·ÃÐoìL#¬Ê@&gt; ú4Dèc}u·ÏA­|DÆ4ÐHVW®	kXbReG)Õ J%KäCé¬?`d()Gu±IÅ@ÝÏ}§g4ñ¸Ýz&amp;´ae0n¶&amp;á§62Ã7q¾§èkú6GyMþc
+8C,ý»N¬wnhÊeÙ9ÆhZÃh/¬ûÄÈoé4¯ÍÊ¬ë7w6¬ç£ïÛ¡ôÓ¯qÃhëZRÝqWÕ]g,DpÁtwS*7p
+ºC´îrO=Õh½GÁËè*âàd.WÄÇ¸­¤S.5GÕg d¬|òà{{Ä+0¼L{®©±bÕ«;&gt;
+Íz¯oÆ½{Í ®!ª¥»ö9ü2¤gkÿ=zÙãÙe®Y5-;&#39;ñr±Y0¿Ôç´f=±[I+·&gt;òäÒ§V´ÉµÝ
+â¡0êV9Øh%QI­úA7Ù=#5×­#=Ãç8IÖG/&#39;ÇÁaõ6GÎhÿ³%~a¡Î¼;_yÙa:ºí|Ü±Ï s&lt;%I(
+7TÙ&amp;ÃH|$ôX8)&#39;µEV4«uÑo$ôÈ=aµäÐkÑSæÐ&gt;à4èiÇ ¦%8*Ò2dÚjÐÑP¬äéÙ/ðu¹ã{äNOuÌ@iJI§yjÅ-O2ÓNÃº8äF)Ív7ªo½ ç:»
+þ.3)wÞØZ¤mÓ¯ÒuusE	­ÞÄ(  Ê&gt;qÀc&gt;ÞÆ00ÖTHÀÚ#Â©=n¢Ê&quot;¤K¨:Ñ/&quot;¼Ûº)N®-Ýï@z63HBÈ¢ÆA
+ûñÐÇÏ%O»6@ÞÞÑ³q
+ånïóÜÂ$¸9º,s¹óæQ`SI}PåóÈ=äUô§~¢H$;ZGÈ/³Ö§Ñ7Ó&gt;GJ).Um,$q%x\
+R[@|0/Sºù¼ñ}rÿI¸íÿ@`ëM ¡ãCi7,ë­#Þ­×¬®	îì&lt;ÀXG8¸-PÝ¼;zR!Ýb±)D&amp;ÔÌm%p«/y¯loC¾ÕÔãÇä ã7¢&amp;9~³ÊäxpNB)$¸©fà|3O åÏbµ_±ïúààò¦.éßmuÃÃ÷wA
+¯}¸å}òÝÍào&amp;¨êà7&lt;|¸Aö#v*Ò¡v§¤fâPäzßc¾ÂÕ´Ï·!%8}{÷^XÜ|ÎìÃÁX×¶k¼&amp;+çrÊÉ$`µÛ®N
+	O#Ë°ÆÛÇ°{2«ªz¯ä¡ÞqñVÞä%6ð`%UU&amp;LO]õ Ä)³g#{,Xócf
+Ç÷mai3?K±9tguL£µ{Ìûà¹Ý{+AàiJ,^«¬Â6K{Ù6AÛ#ÂoÆ6EúÄº¾ÜÑ[yèi»õð5@[Øæ¼R£	cÍ.´\ÆzdODRûh8ðÅæ®Ø7Áüõß §Re9CoJYX+sYSÄë¢ûGEÁºîèÉÉIÀòèñ0®1äÉÈúxi#¿Ëñ»¯b+mi*U
+ª&amp;äÆ:mÜbEÊlÉç^)@²Naþ©¨J¢(F\$a$¹µc·Äü1¨ývsC,8ÀÚAÿ s6µÄ¡ûÍLÖ¼LÿMjÊ³¿Ë~g¶Àµ0/»ûÈMû|¶¿òÕ9üÜWpæ¹}Ú³Gï^5Cs_õ÷·z- w[V¡´êpÊypË6;jÔkc3{&#39;æL¦ î0È)uwÅcýÀñ»bu}«Ær[öû|p¤u÷ê5­»&quot;Ü} ¡°urÄÍM¹wöøqªtÆ[vÅRXh³6ú0qêTB\paßmÃ¶éÂsãÍ_ÙqûÍ¸l&gt;´øý÷6ÿ,uKeÅµ8-­)Í09Ü¼kÍºæ)¯Þqº*b?z2»Ó¿mR6Ò&quot; ~«óðsGÃ/0W¥³?ÕYk
+BÞgþ&gt;ô}wï(8S-Fzyñta¼¿ ¹îjÅO*DËéûª«÷Ñé&#39;%û¤\9W¯¨~.¸hÝ&quot;`*5Ì-µb.Jl¥ni8ÞßéQ^Çd¼DÇÔºu!BíDÁ%ÓµÆ	dn:6ÎN¢ÒXÙ²YwäamÑ¥/ýèË¶Qëü1z_3rgÁÑóÃÙÏR4^LtdÅ
+uCø05on(Ãç¿:øa/ÒËù·Ê¸âàAã
+ZÝPT:îûÊßn5E-ÿ®²æ)Ãe6;Ü®)ÑÇmÜåë6¾éqO(¿OèÿêÂ9»,Ûp4g.ÿ¼s·]UÂ ]XÙaÛfzÆ*Fßr¿31X¦RR\}:c+	R¼a7âd|µ¿Ö^ÞH´º*_³ZäÚ!J{ãQ©Î©²Ý&lt; ü°Zê1N¥)mh¿ÏÕ)hÁ:V1t©&gt;ÒauÍõBëmcýNöõçû³õOxCåø³5ý=³uhUKU8ÐVwç4%©ÜÀ¼Ú0×¦{7½x-Ùt_É^ZéÇÓgEklþ´²³¤[Ø?ôqbò¸° ð6¬Ï]9.Ã Þãê{
+,Ï&quot;0µÚ)$,·dÜÏãV _dµþ&quot;¨J{kèáòà8ä·ÈûPò¢Ðï ,¢üJÊlmQØ;Ô=» mÑÞ&#39;ã!&lt;¾=+ât:¹V.äTv)¯´63ÛÜñ~h6é!]ªÅäôÙüÑx\El¶ (*ôª(ö.%,ïüèàá»\Í³ó&gt;Eà·óy:@1.ñÄL(¶.&quot;t[L6.áðC7l&lt;SïI|Æ¦­ÐíS%¹­£½,qÞÍ¨Ë÷+mýl(Úua)Ïê¡êãÙî:óäêô&quot;I@¯ø9$à&#39;÷.DNA{ KÊë5§zk4ÝJFÁ
+Ù|Ý{¿Epo²~ÎFK-~ÔÇcáýÃûénìnÇiwã#Üoù©¼U\ÖvõÊÊsg*VÅúa·Dânú»þçñW_
+Îç9yáS.	ÖÚª¶DZÖ~\¼T0;_©T_*¿ë_¢42Åhó*5îáKo7B&quot;M\®&#39;û[E!¦pkA6QI¸ú8­z^½¶¶î}vØA¥¦°õ±ï0fmCßæ¨^G{¤âñRö&lt;uQNYºÛ¬-*{Ü4x#ôÈµ½ï¾ù[^×·ä4;É§R&#39;±¢÷D²{ÙqÕÁãÁ¥_Ý#0èq`0ØÂyY³]ê&#39;®ä&lt;9vý£·ÑlWªN©×÷vCLÈà²~¼QÐ^%åó)Ú£L1â!ÜZÕJW$ÔØQC,,y«?ZÓf½4|&#39;Æ±Óí²RXÏ=öZ®FöÞwÇ*Èz¾óÁ@á?JqÇÇC1OþÒ.9K:¨ôOÉaEý®Ë`æ0/¬¿xu.B¼»
+ypþ OI&amp;^2KÒóÎ8&#39;É&#39;4sÓ+ô[ ¯Äzcl 2i]3O3!eWlyÇÆVzãDHûDM&gt;&amp;3Ç_ùØþor[æ VÖcKk³ËÓ4æx¬Óúm¯Ä.Ê)©h¦&#39;U&amp;ý CÒÁ,ov§¶´û¢Vo&amp;F°¿)Btúó`¦®J¤ÍS¢±ZÓjJ¸)¹ .,3È¤ràb4(iDnVCð²Úfr¿þ1	ÚØ@Xñ¿9-®ðÏZ\V¹È·6Á0\4¹UÃù¸uÙóØóEÂfù ®É¦ÔÇ7;]fsGh£ÿ¯·~h:5uzªñíj&amp;ú ÐÐHòÇwIü-¯Çæ;§;ó[Ã´FNïñk^\û&quot;oç;K)ÕÏ&lt;?¾ìô²(ô°ÃÃ1¼+=Ð+ËªqÀÂðìæzNá°g2i·G|×ÏP,²p{­òíÕ´¡K¢CD¥HØlÊRo+á;´D§Î!G E@9i P®(¾%èØÐ¢ÜãóÅÌéÝ0­oçür5X2ùXêÂZú×ïòG·µ(þxþ)&amp;ð¼]?ô4.pA½uG·EÖ 63Kc&lt;[ÚT@çðpM3ëlÞ»Õj
+Ò§ÓÐpt;}.Pò6NYpì7èeÉlt öP¥.Ü¤ LæW¨mÞ§3yê0¾¹Çà]yÜZÿßv­o;÷KRDÁ:5¦x}x=îº&amp;7Eõ^åß´rÌ£æ\ÏèòrÕHÑÐçõC}öõJb$ªÝÝ¸ØvnIK=©ÔßN·Õ ZÕ+´eô4Ú`[«ÁØú.ÛÈN)Ìç!b±¢¼gg&#39;ñ7ìK¸&quot;
+Ú¥6ÅM¿ñÚ«Q©CÍ
+hRhC*ÚûXÆM$Lñ.5rÄjt+¼*u¶°anö:Â  -Jc	¬Æ­f_ëÖÌ=ç^UmtõG,¶mq( rP4HÍö`Øy¨ÂÒYÑ\¤:,cÚëñÊÍcÑ9	:D|°	@`£\]çwo»`TK¬u(°3Îó¸÷29 kbzÔêjFjç»AZe|}ºà1ÆãövÛõ«õôá) K¤q?ÄòDçId×Ìxaf¹¨\[¨ær/¸îÒ&gt;ó6UÔøÎÑtÕ^¬ëiáAéGb øáÒòm%?,¬ÖPKNWqJy@å6Â*ÛVwÁ^ùkt2KìÊ¥Ê5=Eÿ}72ã&lt;þCFGÅE&#39;FòÇò*rr»d&quot;µïý$NrRBÚ|Áï¹;(yN3GKEÝöFü]@(ïúrß¼ójú#Ôh÷Y0ØfqBzÿ&quot;m¬I	¶õ7bæH³Hp_ØIx*ý©°ô3íº:sD±+X¬aVRKû_{ñæß1KÌøh¢V&lt;ZzótÑÐHúH[jÕRÄèÏvºF*µº«õ±?fwhs9}¹ò&gt;g0V~&quot;-4Xq¶GÉâø!ºUóX*¥è^ÉË1±ÓÝÝ  ÆÓÍ¡ï&#39;[úº,zygrè²Jæ©.¹ð7bM®à	Ií©3&quot;ÆÓq	¬9U+yBqYg4fõXy;E.kÎ¥u.G\{*©ÕÔÊ=nÑ¹7Óå:âj×0FOj²ß1bQ©íÂ==¼N´TàPõýK°¯¥ÄMÍ©gk&lt;:x9=ÄÏ4üÎüg­&amp;¡¡6¬Ê~KÙÇÕÍGÂÛ%áö±íá&quot;4Á²5xÀÈ;ÍoãÆøìSý©«³¯5èº2ûÞ¬NwáýÙwÏégÛj¨¿ßnqoÿ«t: ëÉ{Z(©1R&lt;ø¿Îéª¶`h[K&quot;;úë³{ºHÈ­}éw ÐTÙ¨Ó©Ã ¨÷Ùÿÿü1ÙÅdáoü=fdU,DAoYjù¶æñ^J$ºÓi3 ÁXa`|9#++ãep¾(@Ä,fÄv)Rîlê\SZLÐÖa{ì©2»Èª7+AGR#OP|Øec¿Ó+ãÁ]²²x
+×kéMn??.SC&amp;NZýSÊ@©e?n~4tÔ11;?ÚØ¥Ã/ãôMëêD÷]_f±ëGhþÔôø²r3³²s(9ùÜÅ¾eöÊHVvfV.7ãáµ³øìZ¼e&gt;&lt;27ýÊ?ªÚÐRFýQâÈ@QØPýãVkáOâø¥Ù1ovG3zñþ4DüþøÁw®|¥×(Õð¯Ä}Û áp(H
+ÿb¤u³{£Ú^þýÿÝqÏ×§úïép&lt;:Ò%Ýhjè:Ç;×¤Ó.t7÷¶´4uãÂþ/¥Ö 
+kmæmK£]õ¡ÍðÚ¥&amp;ØédSê&gt;p7ÿAÔFÐt\¾¿á8?CÚ	®¤Ïøo´í9hG¬íÍÑ­×­°ôé[fÌg&gt;¾¯µnËtª1QëRû?b&quot;û?Ô~ñgq&#39;ÚgJt.µÕ|
++¥N==9þ§Äêjà¥òr×ÜU .ð~¾½Î)sä~&gt;,2W¹Ý«{%7î 4)*ÅhÍ6:lýKôÛß¶öxCØ(ò9&quot;fR&gt;ø	O&quot;AÆ¤üq©ÛzO³d¯y¯U&quot;ðîÓc;ôSóz.£ÏÓwí p NZ?«Å#d²¦MI¶St¼bñ@X5@ÚÚ&gt;(ÐNöDM~-?¿æ8{~m¾ÿ~è}*Yu0t eÏ	.Wøn3Eµv§[oæÏp¹Ó|K¾ÞåR|¦i£ýV¹ða©ÍÑRÜ®R7ç¹Öûê%q­õ¥g®SW+*Éw*+î\g*Fþ3²jgÅÍ®ðÍÁÌõB&lt;Xô¦\vK$º%¿yº²VUPYYPE+0tA´¶Ë8½]K®¡kð&quot;ºøÆ¢Ð)ºâó×@JÍiÙµüP{Ó(Jz» óÂ¦6¤ä©&quot;xmYQëÕiVTkê©²­­le+[ªP*ªl3¯Ä±ÀÈ{j ½
+oäñ&amp;¾Î@ï%=´×ôvÁSI{b÷RZ.#Á7k¼&#39;í|Ò&#39;ëÉ!ñMèô6QôTÒ`4Ð;ló6JÅ·uñ}i&amp;ÔÌrÒªvlê¹ðÊC÷o´(GçÍ©-&#39;çOOâ¹1=Â&#39;rîÞþº0V:æ&amp;]ìÔR³~´ ôáôïã]|Oð½÷³n«oß&gt; fþÇï.¸_ê3@.÷UÔègÐ)u¾¶¦¶åSJU{áÛ(â?q/âº¤r=ÔjÉ¢ãÔ¶,Sk¸å½iãE&lt;û9³LÒñRD	4!´¥3ERH©+4&#39;øW· Í7é¯J&#39;±,ÊGÿÐs	UáIï¦ÕÁ ~4ß9bvtwæ±	´§&amp;CoÚQ78I&amp;é~çiZ-qÓ}ýëx¸7{°ô£XXÛ(£7]ÉûÙn¥ê1ßzÅ½~Þ1ð{Ópñß·c/ðuuÊú\öX¤|,ö¤ñRÓ¥Jwug7ø&gt;Þ&lt;}IàùÎ$¿rýÅæd÷ÅNRB^o7ßÞ AÜ~ø :)3ö5
+_7(t-0;WM³®lÙCXÖ
+Òs{×;ñß;L&gt;±^ A³èàc¦è]å\PÌû±{ô{WµÖ½5qíö.ìnâk#ì[|goV®ml%yü¬u;ãMPê*&gt;jZô·ñp#Ïy1°EO±7Ò¹:ëpÀi Ûåq[L~T¥*ÆélÐÎEÙ2F»&amp;Ú÷T[­Mc-ÓÐpõÙÝÞÁkÙVB&quot;v«( D¨a8]ß\ï±z!%Ñ#j°+X­4·Ì£\åÛ¿&gt;M³{nç&#39;dP*1*ÜBº.Å!åi+òîMm%[Uìîb2wÛì]Ïqã×&#39;LiCÓî^ Ü}¦ìMµI@3 8Óæ RFVez1W_­©sb+Î¡Æ°+ÐQ;YDZØ(Iwè®ºÖ&quot;å¨Bäp8·»~$¨4]{tHêX³E-¡ÎUäTìQ%ÝâÄhÄ 
+|Á &gt;qe¤v¿¬TÓÔ®}ÐÓz;êghß!FåÖW	§áÒÞ¶&amp;·M*×î¹??ÁR?Ðú®Ï]æ-wä|&quot;Za`è912v{7¯å1Ì&lt;5h4xÙT«{DH×¼EÀÅ|X¾ù0è¸U*7À\¹ô¸cCÚëý]nuÙd#õÆË9ìcÖ¸¹/÷só?µªÓ¥pÈYl:»Í¡AQbÎ§ì¦²ü¼æÒºçvF]&#39;M`**±åKkFË2B=ßñÎ*uc.ø¼¾ZÁÁZ@Ô¡Å+ÿuú¥§;ß¡µ¨÷Äh@Õ@;;,/þâtãâ·ÆuÎzÎqö³Î,ÛÐÖ7Üäý½¯°G:¬Ò%%z@×aÓ%m0oe¹.á#3?¯iþ[¹ß]b½;;õÄ#QQÐ+IÖh®®­éáÛ	µUÇ!¯Tþv[¤tÀBí%¢X)Öüª§=&amp;`Ô A()J,/v±2áÅbL²®0ÆÛZjæö6:¿ö2?[S6UÍÂÝý¯SÙÚ,uïÅL9#.12c1iÇjã-)anº¹ú®~SðÞ¯ÃãÿÝ§Õ²ÌÓ$ÂÀ69UqRçÀm&gt;óÁàú\²DâõÊ¤3®äÅ®/|t´&#39;ÙâvÊÑe+½ïF9¸ö­]L-çVÔS\]É6$´ùÿÜKJâ/³ô$;JM5é¨.¹]Ü^7¹vËh©ñ}ÏpÑÄuD&amp;B1¥ÇRñ(Þè4{ºp+ÌïLÅ&gt;aXl¬Ä&amp;]o¼EÏU}Ú!ÀÎ{)µ(wIÁTt´;¥ôÈªW£&quot;X(Ô×U+§)½WÚ]öøä²pouÇxE3zbbSSÚMí7DÉ,ÃÉµ¿Êùk©àÃùÏãjQîªDx8É«&lt;q«Ô»3tE§;®qøH5ê-ü`Éª(ÂZÑ÷&quot;ZÓÏhö*J~&#39;T%ÉQ³Îp®x)môiÚ	Ö×«S&lt;å}oÃgäÄéáB6ÒD¦zbÈi2£rÔúän)7Öz®²,ÄÖ¶³ »ß²tÇ2­ëHDÕ¯úUÛUïEè»¶ÁÌ¨s	},Z£ÙaÒ0ýôÄj²ÓÆÅ²7T}âWÒpíì:Ód¦íí6öC xÑøQ«{ï6ª¾¹Ê*ðÐÃ#ÍÞf?C9M(.QÿTetPÏ:Õ/µØtJ±Véäf¸}Ï7Å&amp;Ee3KÉ£d%÷&lt;õ_&#39;]ÏË, ó+ü¬ªD¡ú¯á)P!ªPbÒû²`ÇtkäÍÌzWó¹JùñøWpëï;&quot;¸	GÕ©¬þéöñü|ìâ&#39;Úø:¨Ðe½Øah3xÌ/ÒU®1¡&gt;´LnFú©ÐÐ0¨È´&lt;¿40Æ¸©ÈÀfa­],8:§³èeÜÑò`¶£ùøíÆ&#39;&lt;~M$É7Ö¶2Ý0âÂÆ÷lósÙC~Àû¤é¹U+S¨#äsôFd©©S®¶Ø¸´úi¢µc&quot;(M;*g¦ñHåfAfÛÅUvÃ&amp;kÜàq]Ëö,í,0§JèXkt4Ñ²$wø&lt;°½SiÆíªùK(¿ÜYwè!|t.j¾G¥NT[×ó¹}yEà
+lìäNþ°ÞÙ¥¸®E2­Þ¸ÞÐË¼tÞ·ùÆRç¦/¯üÉµq}ê»ßlg-ìHæ¬KT½ÉQö·44ë¼ XÆýRZ }T¨Öê³&quot;ýø±!Ô´ØüÏ5ò~éP²¬|Ê¨muó°ÑvÂÁä~æ6ó¨å:ËOte3¤;ßâÃW]$*!Ò5ÈÀÇÜwôD°ãóxAIÿ@-5LãBöö5¼?øa77-§7Ò6õÎ¸PKº¨¯îÕåðádvkáD|u~ËÄà¤ÕTL
+áêÚæjÆéM­¦¹¼ÑXÁolÊ%2#{R§Hnö¬e½Ô­rè|y·æJ±×¨\_AJ·^&quot;ý&quot;(ÔY:/s.ýô&lt;ÛWGAz2¥°©ºqéçÐ·¸ÙNßìx³Ñ£ADÜ£f7§$	Nð¼ÿ¼/t 32¾Õ]¯vkÜÅ÷.%Vì¼qÌk.ºâé×jªA¥¡góÕZ²^UnTª~Qö2Úg[¤2¢,«k »T£ûØ_®u´q®¥XïÌ%ï&quot;&gt;åÞ£nzHÖi²Mó,Äy{öÇUQýRBÃY;Éyv¡»p¼êãá&#39;O&#39;x\å!*îN´À|6Ôë=c\ßaØìÁ&gt;«ÿZ\Ì_ýJSêf&lt;¥UµüGò9\`­Y°À­Ñ×¹oªjfâG*_8ææUú=øK;?S:NýBÿ±ØØ4¦Wß{S
+~oÍa¿ÛnÖ«Å¼¨º*íÈ[PmfÏYN#O«Íá q¶áÎ¦ÿß&quot;ó44ZjINo/FÓÎMiIF&amp;Ãd8#ô¢.þXe¾t8MS¨Ø¯´	¦J.fÐ³l2¨­TÿTSôKà½AK1úõ&gt;ïÕ#¯1:VlÇê0[¡;à-£è~æþZµE&#39;ÎìÞl;»Û³+ß5uOvÉîMqsa¸|èðée\íx£×g0x/hxgÞ@.ìüÞ£àíl
+JPÃH&gt;ìðÉE»*9þ¥QU×mÔÃrá¹héÄ¥ÕÌ`©þÝM:åH	è&quot;¹kjtÊâ$rÞ)w&amp;2Û@ f¸Udp¼¤¸óÐd\ÂJà.ßEN±º°*Q&gt;  wêáåIü¥ü7^§4ä×cL¥nzöÌ+ÁAV[M£k,f&lt;a# I»fÃP$òµi×(bÒÃë¨È¬øTëêþ ++Ât¤÷Ã¨J%¥&lt;ÇQ»3±AúÃM¼g¦\©ÂçG(#)DßVÏ0ÃlÈm&amp;f×ÈyOèÁPS¢Ý:_ûÉ¯fX°QÎ´ X.Íj.&lt;Ýojy¶#|MU§Y&quot;ÝÂ+ê²Íép¶(áí=ÈíFºJuá	AN@ãäøsU&#39;V;|_øÅÅÍª°[h0kËKRjáÂú_ÕÌýóqóï¸_,]DsB££)ZaúÌÉ6¸ùy±L¾Ê¦ÜrnÝÛU¸áv zÄRbÜä
+0BYÓ
+LÀÌ{ÜU©+Éy¨½ÄõFÓ&#39;jCCPòð2CEYF8¶Ä®@Ü/#GcÂéÞÖOÂÿ¾±îvàP&gt;Ný®6/6»RÀTeæÿÑøX¨ ÉRøhaFfZZU[·ý&quot;®Ùu¼0ÓC|xRU¶7Æ
+1[}!ìMCA(VI«bxM±USuêaÖ2ìphÇáÐ|ÕµÎñ8ÄË&#39;¬Å
+7 ?ív²×&quot;a¨Ý+6©ªmSÍõYdÖîzk©=Ñºx/È©BÇy¬&#39;ÌhÐìªÎûáLZJäìMé	,0HáiâbÍ;v=2;/ýçä¹ÓxQÏÂc²¤@hÖ½él)ÓKLJ$-Dà»¥1~¸Ò-?Ú¾ë£C%M¢ã\*ÇAgMðn{¯j_ïL¼¼Áõ4®ñív?ë4¹~¾Ó5¶à¯NKü5ù¢ScqãûÄy6´û-ÿÊ!&lt;WBÅ8Ïív¤BÆ`þ/=è­C½IçÈòjìï÷âõågãI4vO2cËûHøîÈÕ?åÙÀþCM%Eù#û½J~):UÉù×Ð$Ûë±&lt;@½4MÌÅ×©Qìc·Y4U§áY-CHÒKú.³1§Éìæ..c)Øa­¼BÏ1 1õèór6U«¿O°bckoÿ¼@ðzïG±ü·%)¯ÁØ~yÉfòÛÿ¼c#;6	hÄ^Ýñoq\|à)`ñS¿G%ýNXªØ±L hêù;²/wIÇ&gt;ÝV+£&gt;Ã?GÖOÊ®^yÁ^FëC½kßüÔáðÊ5¶²5wckUÊH¦ïhó.;pUu&gt;3ðGÈj´8²cI¤p}9éWGþýå\¤òê%æ__ðîÆñsk[Å_Û?/ JÂ@¼&#39;Pzi&quot;ïú{}=Êg¦&amp;4$&amp;@ÕVâÀY[­ÐA)JÉÐÍ¬J ÜtÁ¤ èD@¤@b Ò^JÀ+¹ S[$L+&amp;Ó°À ä®mËl¨0½ BümP4BLÝJ@ÁVPÔå¶¹Ãpö×CðQù½Ie$ à©:`!¦`Î,#ð +xbL¯Ä¼ âà¡þ+[ðYÀ@¤ÀI²*we I4íÈTÍ&gt;{ :&amp;«!Ò9ß´;Ø-=cæ!aþ=QSëk|½ýÐ+@ã-/X#sDÀ&lt;Ô 8^é,8(-åY \æ`3`üt0NÖ³$Ý0+ûÉÄ©uN$%¹îO,w± &quot;L=ëe-Ö£}°§¹Öõ1eÍMÄMMFP0)¢Hä*Db6ºB
+)¹0FBÌèÉ¬{ëc%Çjéu=ëJ5Ve;)¾»ÐogJ«N7WÊ^7R±xKÂ[B
+%9EB6¬I÷OÆ&quot;Èà\áË&#39;ÝªËÚLòÆxÕ)BIÈz+ë1Ð;=.f¢u¸N&quot;rÚ&lt;=2ú&#39;HÜl¿(&quot;	ì_ Í½ip&amp;Ð ³ê=ÀÓæ¯&lt;ÖîÜ¥+O]qãÖs2¤d± ä)tPtÃKa¨Ì§ä;Ê4ûºé_GAÙ7tÀ&quot;D)V~&amp;LÅ1ósñË¦&#39;Å&gt;vª½,U6{²#Ý¿Ó9Ê%[¦98ù3®*¸q+_&lt;&lt;yñöM&gt;zôâ³#eï?ÿ~T¡E&quot;#&amp;Øö?ü©BèN#¹ë¸#e8ñ²¡`çË. wdÃ¢%X¶bÕ	ví!abb;J´FpúÞ®¡¨Á0%À0Èf÷ä(WªJ¥jEü|q[l¥YîB¶xÛ{ÞPËÈ[ÞõfIð&gt;Ò&gt;Ö?Sé}¿d¾ºårÈp%)=ªE §Ù/éGºìR©Ð¨ezZ\s:ÇcÛÏ-8Ó¼¦¼¢0$i_zöµé&lt;êsTêHîkô°äÚëe·Ý_uÑÃ8¡èÈò3×ægÌWG¨»úÜòÔöÍúó÷áKÄ°$b³¡õýDWÅ~ÊêGÐÞ&lt;
+Åî±*möÕ¤Ïú§v¸{ùÃ½as9®ºÍ¹Å©{yLÕÁ=·åïö,v   </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://172.16.220.137:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://172.16.220.137:5000/static/style.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (309 bytes)</summary>
+				
+				<pre><code>GET http://172.16.220.137:5000/static/style.css HTTP/1.1
+host: 172.16.220.137:5000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://172.16.220.137:5000/
+Priority: u=2
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (371 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.3
+Date: Sat, 24 Oct 2026 14:42:13 GMT
+Content-Disposition: inline; filename=style.css
+Content-Type: text/css; charset=utf-8
+Content-Length: 12672
+Last-Modified: Tue, 20 Oct 2026 14:19:09 GMT
+Cache-Control: no-cache
+ETag: &quot;1792505949.0-12672-3260094204&quot;
+Date: Sat, 24 Oct 2026 14:42:13 GMT
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (12672 bytes)</summary>
+				
+				<pre><code>@import url(&#39;https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap&#39;);
+:root{--bg:#0a1020;--panel:#111a2d;--panel2:#0d1628;--line:#253149;--text:#edf3ff;--muted:#97a7c1;--cyan:#42d3f2;--blue:#63a9ff;--violet:#b9a2ff;--amber:#ffca78;--green:#62e0b2;--red:#ff8d98;--radius:18px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 20% -15%,#162544 0,transparent 45%),var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif;min-height:100vh;font-size:14px}a{color:inherit;text-decoration:none}.topbar{height:86px;border-bottom:1px solid rgba(141,162,198,.16);display:flex;align-items:center;gap:32px;padding:0 max(4vw,24px);background:rgba(8,14,28,.72);backdrop-filter:blur(14px)}.brand{display:flex;gap:11px;align-items:center;min-width:205px;font-size:15px;font-weight:700;letter-spacing:-.4px}.brand-mark{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(140deg,#3ed1f0,#6490ff);color:#071224;font-size:19px;font-weight:800;box-shadow:0 6px 22px #39bfe52b}.brand small{display:block;margin-top:3px;color:#7890b3;font-family:&#39;DM Mono&#39;,monospace;font-size:9px;font-weight:500;letter-spacing:1.15px}.brand b{color:var(--cyan)}nav{display:flex;align-items:center;gap:6px;flex:1}.nav-link{font-size:12px;color:#9babc4;padding:11px 14px;border-radius:10px;transition:.2s}.nav-link:hover,.nav-link.active{color:#eff8ff;background:#1a2943}.nav-link.active{box-shadow:inset 0 0 0 1px #2a3d5b}.session-pill{white-space:nowrap;border:1px solid #263852;border-radius:30px;padding:9px 13px;color:#a9bad3;font-size:11px}.pulse{display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:7px;box-shadow:0 0 10px #62e0b28a}.container{width:min(1080px,calc(100% - 48px));margin:30px auto 0}.lab-warning{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid #604b32;background:#241e1a;color:#d9c5a8;border-radius:12px;font-size:11px;margin-bottom:36px}.lab-warning strong{color:#ffdaa0;font-weight:700}.warning-icon{flex:0 0 19px;width:19px;height:19px;display:grid;place-items:center;background:#644a2b;color:#ffd18e;border-radius:6px;font-weight:800;font-size:12px}.hero{padding:33px 4px 45px;max-width:760px}.eyebrow{font:500 10px &#39;DM Mono&#39;,monospace;letter-spacing:1.8px;color:#849ab9;display:flex;align-items:center;gap:8px}.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px #42d3f2a1}.hero h1{font-size:clamp(44px,6vw,66px);letter-spacing:-3.4px;line-height:1.08;margin:21px 0 18px;font-weight:800}.hero h1 span,.page-heading h1 span{background:linear-gradient(90deg,var(--cyan),#8baaff 82%);background-clip:text;-webkit-background-clip:text;color:transparent}.hero-copy{font-size:14px;line-height:1.9;color:#a8b6cd;max-width:625px;margin:0}.hero-actions{display:flex;gap:10px;margin-top:25px}.button{display:inline-flex;align-items:center;justify-content:center;gap:18px;border:1px solid transparent;border-radius:10px;padding:12px 17px;font:700 12px Manrope,sans-serif;cursor:pointer;transition:.18s}.button span{font-size:16px}.button.primary{color:#081323;background:linear-gradient(110deg,#50dbf2,#83aaff);box-shadow:0 6px 22px #43c7f41b}.button.primary:hover{filter:brightness(1.08);transform:translateY(-1px)}.button.secondary{border-color:#2c3a54;color:#d1def2;background:#111a2d}.button.secondary:hover{background:#1a2943}.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:25px;color:#8294b2;font:10px &#39;DM Mono&#39;,monospace}.hero-meta span{display:flex;align-items:center;gap:7px}.dot-green,.dot-blue,.dot-amber{width:6px;height:6px;border-radius:50%;display:inline-block}.dot-green{background:var(--green)}.dot-blue{background:var(--blue)}.dot-amber{background:var(--amber)}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:20px 0 16px}.section-heading h2,.learning-panel h2{font-size:19px;letter-spacing:-.55px;margin:7px 0 0}.subtle{color:#8192ad;font-size:11px}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature-card,.panel,.learning-panel{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,#131e33,#0f1729)}.feature-card{padding:20px 20px 17px;min-height:199px;display:flex;flex-direction:column;transition:.2s}.feature-card:hover{border-color:#3a577b;transform:translateY(-2px)}.card-top{display:flex;justify-content:space-between;align-items:center}.icon-box{width:34px;height:34px;border:1px solid currentColor;border-radius:10px;display:grid;place-items:center;font:11px &#39;DM Mono&#39;,monospace}.violet{color:var(--violet);background:#b9a2ff12}.blue{color:var(--blue);background:#63a9ff12}.amber{color:var(--amber);background:#ffca7812}.tag{font:10px &#39;DM Mono&#39;,monospace;padding:5px 7px;border:1px solid;border-radius:6px;white-space:nowrap}.tag-violet{color:var(--violet);border-color:#554778;background:#211e37}.tag-blue{color:#8dc2ff;border-color:#31537b;background:#132842}.tag-amber{color:var(--amber);border-color:#6b5334;background:#2a231a}.tag-neutral{color:#a4b5cd;border-color:#36465e;background:#1a263b}.feature-card h3{font-size:15px;margin:17px 0 7px;letter-spacing:-.3px}.feature-card p{font-size:11px;line-height:1.75;color:#97a8c2;margin:0 0 18px}.card-link{font-size:11px;color:#8fe5f6;margin-top:auto}.card-link b{font-size:14px;margin-left:5px}.learning-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:20px;padding:25px 27px}.learning-panel p{font-size:11px;line-height:1.8;color:#96a7c0;max-width:450px}.workflow-list{display:flex;flex-direction:column;gap:11px;justify-content:center}.workflow-list&gt;div{display:flex;align-items:center;gap:13px}.workflow-list&gt;div&gt;span{height:28px;width:28px;flex:0 0 28px;display:grid;place-items:center;border:1px solid #34445f;background:#1b2941;border-radius:9px;color:var(--cyan);font:11px &#39;DM Mono&#39;,monospace}.workflow-list p{margin:0}.workflow-list b,.workflow-list small{display:block}.workflow-list b{color:#dce7f8;font-size:11px}.workflow-list small{font-size:10px;margin-top:3px;color:#8395b0}footer{display:flex;justify-content:space-between;gap:15px;margin:38px 0 0;padding:20px 2px 27px;border-top:1px solid #202c42;color:#647894;font:9px &#39;DM Mono&#39;,monospace;letter-spacing:.5px}footer i{color:var(--cyan);font-style:normal;margin:0 4px}.page-heading{margin:40px 0 25px}.page-heading h1{font-size:42px;letter-spacing:-2px;margin:12px 0 8px}.page-heading p{margin:0;color:#9cacC4;font-size:12px;line-height:1.8}.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:17px;align-items:start}.panel{padding:23px}.panel-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:19px;border-bottom:1px solid #253149;margin-bottom:19px}.panel-kicker{font:10px &#39;DM Mono&#39;,monospace;letter-spacing:1.4px;color:#8196b5}.panel-heading h2{font-size:18px;margin:7px 0 0;letter-spacing:-.4px}.form-stack{display:flex;flex-direction:column}.form-stack label{font-size:11px;font-weight:700;color:#b6c4d8;margin:0 0 8px}.form-stack input,.search-input-wrap input{background:#0a1324;border:1px solid #2b3952;color:#eff6ff;border-radius:9px;padding:13px 12px;outline:none;font:12px Manrope,sans-serif;margin-bottom:17px;width:100%}.form-stack input:focus,.search-input-wrap input:focus{border-color:#4e9dc9;box-shadow:0 0 0 3px #42d3f215}.form-stack input::placeholder,.search-input-wrap input::placeholder{color:#586b88}.full{width:100%;margin-top:2px}.side-note{padding:7px 8px}.side-note h3{font-size:19px;letter-spacing:-.4px;margin:13px 0 18px}.side-note ul{padding:0;margin:0;list-style:none}.side-note li{display:flex;flex-direction:column;gap:4px;border-bottom:1px solid #222f46;padding:12px 0}.side-note li b{font-size:11px;color:#dbe6f7}.side-note li span{font-size:10px;line-height:1.7;color:#91a3bd}.demo-creds{display:flex;flex-direction:column;gap:8px;border:1px dashed #394c6b;background:#111b2e;border-radius:10px;padding:13px;margin-top:18px}.demo-creds span{font:9px &#39;DM Mono&#39;,monospace;letter-spacing:1px;color:#869ab9}.demo-creds code,code{font:11px &#39;DM Mono&#39;,monospace;color:#98e4ec}.result{display:flex;flex-direction:column;gap:6px;border-radius:10px;padding:12px;margin-top:15px;font-size:11px;overflow-wrap:anywhere}.result b{font-size:12px}.result span{line-height:1.7}.result.success{border:1px solid #235b51;background:#102a2b;color:#83ebc6}.result.error{border:1px solid #734049;background:#301c2b;color:#ffadb3}.text-link{font-size:10px;color:#87ddec;white-space:nowrap}.text-link:hover{color:#c0f6ff}.logout-link{display:inline-block;margin-top:14px}.search-panel{padding:20px}.search-form{display:flex;gap:10px}.search-input-wrap{display:flex;align-items:center;gap:10px;flex:1;background:#0a1324;border:1px solid #2b3952;border-radius:10px;padding-left:13px}.search-input-wrap:focus-within{border-color:#4e9dc9}.search-input-wrap&gt;span{font-size:22px;color:#7e91b1}.search-input-wrap input{border:0;background:transparent;margin:0;padding:14px 12px 14px 0;box-shadow:none!important}.hint-line{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:10px;color:#8498b5}.results-section{margin-top:27px}.results-section .section-heading{margin-bottom:14px}.query-preview{font-size:14px;color:#8ce6f4;overflow-wrap:anywhere}.result-list{display:flex;flex-direction:column;gap:9px}.result-card{display:flex;align-items:center;gap:13px;border:1px solid #253149;background:#111a2d;border-radius:13px;padding:13px 15px}.avatar{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:#193149;border:1px solid #315c76;color:#86e4f3;font-weight:800;font-size:12px;flex:0 0 34px}.result-main{flex:1;min-width:0}.result-title{display:flex;align-items:center;gap:8px;font-weight:700;font-size:12px}.result-main p{margin:6px 0 0;font-size:10px;color:#95a6bf;line-height:1.6}.vuln-callout{display:flex;gap:11px;align-items:flex-start;border:1px solid #55442e;background:#211e1b;border-radius:12px;padding:13px 15px;margin-top:21px;color:#e5c99c}.vuln-callout b{font-size:11px}.vuln-callout p{font-size:10px;line-height:1.7;color:#cbb99f;margin:4px 0 0}.empty-state{padding:26px;text-align:center;border:1px dashed #2b3b55;border-radius:12px;color:#879bb9;font-size:11px;margin-top:12px}.profile-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:16px;align-items:start}.directory-panel,.profile-detail{min-height:360px}.user-list{display:flex;flex-direction:column;gap:7px}.user-row{display:flex;align-items:center;gap:10px;border:1px solid transparent;background:#0d1628;border-radius:11px;padding:10px;transition:.15s}.user-row:hover,.user-row.selected{background:#192740;border-color:#385277}.user-row .avatar{width:31px;height:31px;flex-basis:31px;border-radius:10px}.user-row-main{display:flex;flex-direction:column;gap:4px;flex:1}.user-row-main b{font-size:11px}.user-row-main small{font-size:10px;color:#899bb6}.user-row code{font-size:9px;color:#8296b4}.arrow{color:#80dced}.profile-hero{display:flex;align-items:center;gap:12px;margin:8px 0 20px}.avatar.big{width:49px;height:49px;flex-basis:49px;font-size:17px;border-radius:15px}.profile-hero h3{font-size:16px;margin:0 0 7px}.detail-list{margin:0}.detail-list&gt;div{display:grid;grid-template-columns:100px 1fr;gap:12px;padding:12px 0;border-top:1px solid #253149}.detail-list dt{font-size:10px;color:#7e91af}.detail-list dd{font-size:11px;color:#d0dcef;margin:0;overflow-wrap:anywhere;line-height:1.6}.compact{margin-top:19px}.empty-state.tall{display:grid;place-items:center;min-height:190px;line-height:1.8}.flash{margin:-19px 0 22px;border-radius:10px;padding:12px;background:#102a2b;color:#83ebc6;font-size:11px}
+@media(max-width:800px){.topbar{height:auto;min-height:78px;flex-wrap:wrap;gap:10px;padding:15px 22px}.brand{flex:1}nav{order:3;flex-basis:100%;overflow:auto}.nav-link{padding:9px 11px}.session-pill{font-size:10px}.container{width:calc(100% - 32px);margin-top:20px}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:160px}.learning-panel,.two-col,.profile-layout{grid-template-columns:1fr;gap:22px}.hero{padding-top:20px}.hero h1{font-size:48px}.learning-panel{padding:21px}.side-note{padding:4px 2px}.page-heading h1{font-size:35px}.directory-panel,.profile-detail{min-height:0}footer{font-size:8px}}
+@media(max-width:480px){.lab-warning{align-items:flex-start;font-size:10px}.hero h1{font-size:41px;letter-spacing:-2px}.hero-meta{gap:12px}.hero-actions{flex-wrap:wrap}.search-form{flex-direction:column}.search-form .button{width:100%}.result-card{flex-wrap:wrap}.result-card .text-link{margin-left:47px}footer{flex-direction:column}}
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Werkzeug/3.0.1 Python/3.12.3</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://172.16.220.137:5000</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://172.16.220.137:5000/static/style.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (309 bytes)</summary>
+				
+				<pre><code>GET http://172.16.220.137:5000/static/style.css HTTP/1.1
+host: 172.16.220.137:5000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: http://172.16.220.137:5000/
+Priority: u=2
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (371 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.12.3
+Date: Sat, 24 Oct 2026 14:42:13 GMT
+Content-Disposition: inline; filename=style.css
+Content-Type: text/css; charset=utf-8
+Content-Length: 12672
+Last-Modified: Tue, 20 Oct 2026 14:19:09 GMT
+Cache-Control: no-cache
+ETag: &quot;1792505949.0-12672-3260094204&quot;
+Date: Sat, 24 Oct 2026 14:42:13 GMT
+Connection: close
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (12672 bytes)</summary>
+				
+				<pre><code>@import url(&#39;https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap&#39;);
+:root{--bg:#0a1020;--panel:#111a2d;--panel2:#0d1628;--line:#253149;--text:#edf3ff;--muted:#97a7c1;--cyan:#42d3f2;--blue:#63a9ff;--violet:#b9a2ff;--amber:#ffca78;--green:#62e0b2;--red:#ff8d98;--radius:18px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 20% -15%,#162544 0,transparent 45%),var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif;min-height:100vh;font-size:14px}a{color:inherit;text-decoration:none}.topbar{height:86px;border-bottom:1px solid rgba(141,162,198,.16);display:flex;align-items:center;gap:32px;padding:0 max(4vw,24px);background:rgba(8,14,28,.72);backdrop-filter:blur(14px)}.brand{display:flex;gap:11px;align-items:center;min-width:205px;font-size:15px;font-weight:700;letter-spacing:-.4px}.brand-mark{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(140deg,#3ed1f0,#6490ff);color:#071224;font-size:19px;font-weight:800;box-shadow:0 6px 22px #39bfe52b}.brand small{display:block;margin-top:3px;color:#7890b3;font-family:&#39;DM Mono&#39;,monospace;font-size:9px;font-weight:500;letter-spacing:1.15px}.brand b{color:var(--cyan)}nav{display:flex;align-items:center;gap:6px;flex:1}.nav-link{font-size:12px;color:#9babc4;padding:11px 14px;border-radius:10px;transition:.2s}.nav-link:hover,.nav-link.active{color:#eff8ff;background:#1a2943}.nav-link.active{box-shadow:inset 0 0 0 1px #2a3d5b}.session-pill{white-space:nowrap;border:1px solid #263852;border-radius:30px;padding:9px 13px;color:#a9bad3;font-size:11px}.pulse{display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%;margin-right:7px;box-shadow:0 0 10px #62e0b28a}.container{width:min(1080px,calc(100% - 48px));margin:30px auto 0}.lab-warning{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid #604b32;background:#241e1a;color:#d9c5a8;border-radius:12px;font-size:11px;margin-bottom:36px}.lab-warning strong{color:#ffdaa0;font-weight:700}.warning-icon{flex:0 0 19px;width:19px;height:19px;display:grid;place-items:center;background:#644a2b;color:#ffd18e;border-radius:6px;font-weight:800;font-size:12px}.hero{padding:33px 4px 45px;max-width:760px}.eyebrow{font:500 10px &#39;DM Mono&#39;,monospace;letter-spacing:1.8px;color:#849ab9;display:flex;align-items:center;gap:8px}.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px #42d3f2a1}.hero h1{font-size:clamp(44px,6vw,66px);letter-spacing:-3.4px;line-height:1.08;margin:21px 0 18px;font-weight:800}.hero h1 span,.page-heading h1 span{background:linear-gradient(90deg,var(--cyan),#8baaff 82%);background-clip:text;-webkit-background-clip:text;color:transparent}.hero-copy{font-size:14px;line-height:1.9;color:#a8b6cd;max-width:625px;margin:0}.hero-actions{display:flex;gap:10px;margin-top:25px}.button{display:inline-flex;align-items:center;justify-content:center;gap:18px;border:1px solid transparent;border-radius:10px;padding:12px 17px;font:700 12px Manrope,sans-serif;cursor:pointer;transition:.18s}.button span{font-size:16px}.button.primary{color:#081323;background:linear-gradient(110deg,#50dbf2,#83aaff);box-shadow:0 6px 22px #43c7f41b}.button.primary:hover{filter:brightness(1.08);transform:translateY(-1px)}.button.secondary{border-color:#2c3a54;color:#d1def2;background:#111a2d}.button.secondary:hover{background:#1a2943}.hero-meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:25px;color:#8294b2;font:10px &#39;DM Mono&#39;,monospace}.hero-meta span{display:flex;align-items:center;gap:7px}.dot-green,.dot-blue,.dot-amber{width:6px;height:6px;border-radius:50%;display:inline-block}.dot-green{background:var(--green)}.dot-blue{background:var(--blue)}.dot-amber{background:var(--amber)}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:20px 0 16px}.section-heading h2,.learning-panel h2{font-size:19px;letter-spacing:-.55px;margin:7px 0 0}.subtle{color:#8192ad;font-size:11px}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature-card,.panel,.learning-panel{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,#131e33,#0f1729)}.feature-card{padding:20px 20px 17px;min-height:199px;display:flex;flex-direction:column;transition:.2s}.feature-card:hover{border-color:#3a577b;transform:translateY(-2px)}.card-top{display:flex;justify-content:space-between;align-items:center}.icon-box{width:34px;height:34px;border:1px solid currentColor;border-radius:10px;display:grid;place-items:center;font:11px &#39;DM Mono&#39;,monospace}.violet{color:var(--violet);background:#b9a2ff12}.blue{color:var(--blue);background:#63a9ff12}.amber{color:var(--amber);background:#ffca7812}.tag{font:10px &#39;DM Mono&#39;,monospace;padding:5px 7px;border:1px solid;border-radius:6px;white-space:nowrap}.tag-violet{color:var(--violet);border-color:#554778;background:#211e37}.tag-blue{color:#8dc2ff;border-color:#31537b;background:#132842}.tag-amber{color:var(--amber);border-color:#6b5334;background:#2a231a}.tag-neutral{color:#a4b5cd;border-color:#36465e;background:#1a263b}.feature-card h3{font-size:15px;margin:17px 0 7px;letter-spacing:-.3px}.feature-card p{font-size:11px;line-height:1.75;color:#97a8c2;margin:0 0 18px}.card-link{font-size:11px;color:#8fe5f6;margin-top:auto}.card-link b{font-size:14px;margin-left:5px}.learning-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:20px;padding:25px 27px}.learning-panel p{font-size:11px;line-height:1.8;color:#96a7c0;max-width:450px}.workflow-list{display:flex;flex-direction:column;gap:11px;justify-content:center}.workflow-list&gt;div{display:flex;align-items:center;gap:13px}.workflow-list&gt;div&gt;span{height:28px;width:28px;flex:0 0 28px;display:grid;place-items:center;border:1px solid #34445f;background:#1b2941;border-radius:9px;color:var(--cyan);font:11px &#39;DM Mono&#39;,monospace}.workflow-list p{margin:0}.workflow-list b,.workflow-list small{display:block}.workflow-list b{color:#dce7f8;font-size:11px}.workflow-list small{font-size:10px;margin-top:3px;color:#8395b0}footer{display:flex;justify-content:space-between;gap:15px;margin:38px 0 0;padding:20px 2px 27px;border-top:1px solid #202c42;color:#647894;font:9px &#39;DM Mono&#39;,monospace;letter-spacing:.5px}footer i{color:var(--cyan);font-style:normal;margin:0 4px}.page-heading{margin:40px 0 25px}.page-heading h1{font-size:42px;letter-spacing:-2px;margin:12px 0 8px}.page-heading p{margin:0;color:#9cacC4;font-size:12px;line-height:1.8}.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:17px;align-items:start}.panel{padding:23px}.panel-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:19px;border-bottom:1px solid #253149;margin-bottom:19px}.panel-kicker{font:10px &#39;DM Mono&#39;,monospace;letter-spacing:1.4px;color:#8196b5}.panel-heading h2{font-size:18px;margin:7px 0 0;letter-spacing:-.4px}.form-stack{display:flex;flex-direction:column}.form-stack label{font-size:11px;font-weight:700;color:#b6c4d8;margin:0 0 8px}.form-stack input,.search-input-wrap input{background:#0a1324;border:1px solid #2b3952;color:#eff6ff;border-radius:9px;padding:13px 12px;outline:none;font:12px Manrope,sans-serif;margin-bottom:17px;width:100%}.form-stack input:focus,.search-input-wrap input:focus{border-color:#4e9dc9;box-shadow:0 0 0 3px #42d3f215}.form-stack input::placeholder,.search-input-wrap input::placeholder{color:#586b88}.full{width:100%;margin-top:2px}.side-note{padding:7px 8px}.side-note h3{font-size:19px;letter-spacing:-.4px;margin:13px 0 18px}.side-note ul{padding:0;margin:0;list-style:none}.side-note li{display:flex;flex-direction:column;gap:4px;border-bottom:1px solid #222f46;padding:12px 0}.side-note li b{font-size:11px;color:#dbe6f7}.side-note li span{font-size:10px;line-height:1.7;color:#91a3bd}.demo-creds{display:flex;flex-direction:column;gap:8px;border:1px dashed #394c6b;background:#111b2e;border-radius:10px;padding:13px;margin-top:18px}.demo-creds span{font:9px &#39;DM Mono&#39;,monospace;letter-spacing:1px;color:#869ab9}.demo-creds code,code{font:11px &#39;DM Mono&#39;,monospace;color:#98e4ec}.result{display:flex;flex-direction:column;gap:6px;border-radius:10px;padding:12px;margin-top:15px;font-size:11px;overflow-wrap:anywhere}.result b{font-size:12px}.result span{line-height:1.7}.result.success{border:1px solid #235b51;background:#102a2b;color:#83ebc6}.result.error{border:1px solid #734049;background:#301c2b;color:#ffadb3}.text-link{font-size:10px;color:#87ddec;white-space:nowrap}.text-link:hover{color:#c0f6ff}.logout-link{display:inline-block;margin-top:14px}.search-panel{padding:20px}.search-form{display:flex;gap:10px}.search-input-wrap{display:flex;align-items:center;gap:10px;flex:1;background:#0a1324;border:1px solid #2b3952;border-radius:10px;padding-left:13px}.search-input-wrap:focus-within{border-color:#4e9dc9}.search-input-wrap&gt;span{font-size:22px;color:#7e91b1}.search-input-wrap input{border:0;background:transparent;margin:0;padding:14px 12px 14px 0;box-shadow:none!important}.hint-line{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:10px;color:#8498b5}.results-section{margin-top:27px}.results-section .section-heading{margin-bottom:14px}.query-preview{font-size:14px;color:#8ce6f4;overflow-wrap:anywhere}.result-list{display:flex;flex-direction:column;gap:9px}.result-card{display:flex;align-items:center;gap:13px;border:1px solid #253149;background:#111a2d;border-radius:13px;padding:13px 15px}.avatar{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;background:#193149;border:1px solid #315c76;color:#86e4f3;font-weight:800;font-size:12px;flex:0 0 34px}.result-main{flex:1;min-width:0}.result-title{display:flex;align-items:center;gap:8px;font-weight:700;font-size:12px}.result-main p{margin:6px 0 0;font-size:10px;color:#95a6bf;line-height:1.6}.vuln-callout{display:flex;gap:11px;align-items:flex-start;border:1px solid #55442e;background:#211e1b;border-radius:12px;padding:13px 15px;margin-top:21px;color:#e5c99c}.vuln-callout b{font-size:11px}.vuln-callout p{font-size:10px;line-height:1.7;color:#cbb99f;margin:4px 0 0}.empty-state{padding:26px;text-align:center;border:1px dashed #2b3b55;border-radius:12px;color:#879bb9;font-size:11px;margin-top:12px}.profile-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:16px;align-items:start}.directory-panel,.profile-detail{min-height:360px}.user-list{display:flex;flex-direction:column;gap:7px}.user-row{display:flex;align-items:center;gap:10px;border:1px solid transparent;background:#0d1628;border-radius:11px;padding:10px;transition:.15s}.user-row:hover,.user-row.selected{background:#192740;border-color:#385277}.user-row .avatar{width:31px;height:31px;flex-basis:31px;border-radius:10px}.user-row-main{display:flex;flex-direction:column;gap:4px;flex:1}.user-row-main b{font-size:11px}.user-row-main small{font-size:10px;color:#899bb6}.user-row code{font-size:9px;color:#8296b4}.arrow{color:#80dced}.profile-hero{display:flex;align-items:center;gap:12px;margin:8px 0 20px}.avatar.big{width:49px;height:49px;flex-basis:49px;font-size:17px;border-radius:15px}.profile-hero h3{font-size:16px;margin:0 0 7px}.detail-list{margin:0}.detail-list&gt;div{display:grid;grid-template-columns:100px 1fr;gap:12px;padding:12px 0;border-top:1px solid #253149}.detail-list dt{font-size:10px;color:#7e91af}.detail-list dd{font-size:11px;color:#d0dcef;margin:0;overflow-wrap:anywhere;line-height:1.6}.compact{margin-top:19px}.empty-state.tall{display:grid;place-items:center;min-height:190px;line-height:1.8}.flash{margin:-19px 0 22px;border-radius:10px;padding:12px;background:#102a2b;color:#83ebc6;font-size:11px}
+@media(max-width:800px){.topbar{height:auto;min-height:78px;flex-wrap:wrap;gap:10px;padding:15px 22px}.brand{flex:1}nav{order:3;flex-basis:100%;overflow:auto}.nav-link{padding:9px 11px}.session-pill{font-size:10px}.container{width:calc(100% - 32px);margin-top:20px}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:160px}.learning-panel,.two-col,.profile-layout{grid-template-columns:1fr;gap:22px}.hero{padding-top:20px}.hero h1{font-size:48px}.learning-panel{padding:21px}.side-note{padding:4px 2px}.page-heading h1{font-size:35px}.directory-panel,.profile-detail{min-height:0}footer{font-size:8px}}
+@media(max-width:480px){.lab-warning{align-items:flex-start;font-size:10px}.hero h1{font-size:41px;letter-spacing:-2px}.hero-meta{gap:12px}.hero-actions{flex-wrap:wrap}.search-form{flex-direction:column}.search-form .button{width:100%}.result-card{flex-wrap:wrap}.result-card .text-link{margin-left:47px}footer{flex-direction:column}}
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://fonts.gstatic.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Retrieved from Cache</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBA.woff2</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/525.html">CWE-525</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as &quot;proxy&quot; caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The presence of the &#39;Age&#39; header indicates that a HTTP/1.1 compliant caching server is in use.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (474 bytes)</summary>
+				
+				<pre><code>GET https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBA.woff2 HTTP/1.1
+host: fonts.gstatic.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Origin: http://172.16.220.137:5000
+Connection: keep-alive
+Referer: https://fonts.googleapis.com/
+Sec-Fetch-Dest: font
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (815 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+Content-Security-Policy-Report-Only: require-trusted-types-for &#39;script&#39;; report-uri https://csp.withgoogle.com/csp/apps-themes
+Cross-Origin-Resource-Policy: cross-origin
+Cross-Origin-Opener-Policy: same-origin; report-to=&quot;apps-themes&quot;
+Report-To: {&quot;group&quot;:&quot;apps-themes&quot;,&quot;max_age&quot;:2592000,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://csp.withgoogle.com/csp/report-to/apps-themes&quot;}]}
+Timing-Allow-Origin: *
+Content-Length: 14820
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 0
+Date: Sat, 24 Oct 2026 12:10:40 GMT
+Expires: Sun, 24 Oct 2027 12:10:40 GMT
+Cache-Control: public, max-age=31536000
+Last-Modified: Mon, 15 Sep 2025 17:10:03 GMT
+Content-Type: font/woff2
+Age: 9094
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (14820 bytes)</summary>
+				
+				<pre><code>wOF2     9ä     ,  9                       Xt`` n`	-
+¶@ +L 6$ &quot;=!q%lFÍn¹FQ2Zd$&quot;Ø8÷hÇÿ?å¸±àmÕO³,rË]¤Óèa&#39;OÄº!yåõ4&gt;jhõü3µ¡¦Aa³X¢í@ÔÐñÅãÆÜz»¾2¿¯TÓs&quot;å§ÞÇþ±ø[å&gt;|þ¿÷ª/R=yÖò9&quot;±Xb=ð	Í:ÍõOT	*­bp§8Bcä&lt;&lt;¿¿ø_ûÌ&lt;QJE$©_àÌ=ÏúyIÚÔW Å}4§%¢(q¿»Ü].ÉE/DH.Ðn&lt;U[KU&amp;T&#39;FÝJ&#39;VõçÞÎäcÏm{EÐ&amp;ëÈWµJZªÊï[³ªz¨NúkÌþE8é$óüP¨\uÐº±ò·¾îd`²bòÎ«(,pÿKWùÞ§î´9 6¢©´cÒ#sx%Ãn;ôõ9õw¥âÛhz
+ØVÈ!w&amp;K?ÛWå
+D2Á$;óíiîmÞf7É&#39;ÆæSJTÈ
+y&lt;×ïÝÿCíxxv@è¡c¹)ÞDü^[
+Ø&#39;¬À(¾· Î$¼¾&amp;(y×.ê+jªúK¦s^Ü&#39;nÏæïü.4ö`kRý1¯ÿOGJ
+i
+tu¼þòï××EÔ&lt;=&gt;?§ê&amp;ÊäÔ}ç¼ÿ	rið.@û{SÍö¿]ì	T¦ÎÎwwã¢aº\]QÚ¹µ«÷w±»±$°Ê¤@Ô e!ètò¤¡Î)%TÀx9Ë1u1©µsRK.Ë¾µõ©îsitàÙ±ÅoR:X¨ä¢ ÇcÉ÷ ¯-GFþÃ½¹¾`ÞTÄ4ËXdìö¸¿wÿì§Õh¦¥lIE} UÀìµ¯[SÀp
+ï/=a!.föG®whé*:ÜÞCPBBECQ¸1Êzõ&gt;ã!ç¼[jÄ dMsÄ?¿·²Z!nÌDS&amp;2nd¬@¤ÖvR,ìH°pÁ´¸¿Ò-PøaË¥àÊpvÚäIJièõ¶_§ÁO}ßÿÛú«Z|Åç½äcÅfKÓË&gt;MÚ`eweïÈÑÙòK!is»Ýí=nÔë®v² K©ëöÙaõ0èêÕ*.´uo|,tÉ­2Ê½mIÜ8À¿²Ã/~ôÅA!Û4	·ê¼½ïÓ¦ÅyápÔKwÒc¸³tåÒ M!æ÷¡¨&quot;iÄ¸2H×äÿÅ¿Äiq^¸ÅôõiÎx¢ò¾
+·&#39;P´1HcÒ3JâbJÜ&quot;®NøÃ_å&quot;¢©h+:å&quot;MÔBS|­ÍÛì¤}åß^[tCQä^§ûú÷L©÷ÃKÇ§.ýC$Ê	MÜItÞ`kiXU[I/ÊÌçëý*FP.P×!Y×£RBÛÇÎk`Z&amp;£¼¥g/zRæ¾\¸ä&#39;EÞ÷&#39;ùDÒ¢!
+1g´8â¡ YÌÉKfWWzù^&lt;ÄÜ½Hk%{;&amp; BH©Àp ¥½ú@wMw&gt;ü?û%P»&#39;¶âçæ ë7ÀXÝ¨&gt;=y¾¿tÀ_&gt;9þ$z¾·{wÈ83S¶ÌEL:Åä1Ly¦¦Î*aÿ÷T@!gt4W
+ÖðÜf%ÖÒÀßsÉ^&#39;?ÄQÕT¬óïðïêoáÍÂã? /Ûs4&lt;ïÏÃöA@;$C1 ±pb¹ëù?®j0¯ÝstéÖf[Õ:Ôªshß&amp;Vl8páWn¡
+4Õèj°HHÉÈ)héèÑ©ß©Ò3aÆ-;ö¸qçÁ7_¡ÂE-F¢$ÉR¤ëñR¯cK­Ø°jÓ+×&gt;p#Ã´n}ä#¥Ê¼ãÌï)iF¥
+UaÌH°`Ç§H±U*Q-Rà.&gt;.§&lt;¦¡¤¢f$ÖK+S6,Y±æÊ3æ|òã/X=AÄ/U4Oµ4eÔ¸	c@í6·áCÆø¶5¾f-÷Ï©îõ³¡ý­W&#39;+:õKÛ°ß¯¨Ò_Ñ#×S¢WcØ÷^A¾ûâÐÝ@ñ±ß£xô,UT&lt;4¼c¬Î »ÃKÅ^¶lH v_Z&lt;3!&lt;$ï%±ÅJRn`ü0&quot;X«Ð_2sÌðTyÉ±Êö¥É½KFìÑÊ»nW³_[Âs$Nè$ñ+xWÔPKø»Ï¾ä¢N½¦ùÀYHQ_ÝH§»±ÐáåÐð±RB}¡EñA¹E]B7ÉÉ_íQ|J7Ä¬{&#39;	¸ùRè¾ãUf °²ö°ñ®[S3,Äóãgaì¬âXÈ½jd»Ò¢s,Z@zC»ÇÖNâA JÄX;,
+È S!NJS;0Àß)¶è5¹½qH1ùîW-5&quot;x¶í|mÂP«Uvç@f¤£p´£
+`b&#39;)¨Ù¦ LÀÞ$5÷@-J^¢&amp;ÈÙv6c.÷EDµB1mßÝîÎlÑ»VÅ­OkS2îî&lt;zêÅL¢rµP^:5ØHÑè2JÙYÀ°±c·jíÛ&amp;!-ÕÎ¶z×&quot;sKxt÷p¢h¨/éø®é 
+ç-Øg_6M%sygµXhCß®éÆ«.ñvW¯ÃVòÈ&amp;þm÷êýgÈØ&quot;z{à®&gt;jnJY^Xäøg1h	R¬_#ùàQâgÞçÌ-ûoa&gt;Åö)LÉ×+¡²(rÖ,pD`IéûFóa&quot;-}pp¡ìA`
+!mLkâÔÈx+Ròmãr±	¾NF Ùì	Jö#C!H+$22
+¥¥+àA¨
+¹xõÁ1 ç.Csygßóªym^ÞóúÄ2ëm?(~&quot;rõR4xÈ,xÈ&lt;x(&quot;x(2ød´ª·¤ë-¨â[£R¬F¯n°	fåhh@Cà°Èþ}ädÜÈ´åD²/ÝthåI¨¯çîk_ÍH#&amp;LvAOÄïéaMpÐò@øpFø Ù_çÅÔÕ¥¿Rú UôÂDóhòÜja ¨ï*!1ñß 2FË¤^Ä§£PÓÜ	½ÅAòPÕwú.çøøxüaØµUtXØÙõ@´K+0®¤NpXµ·Ïý¬7:Í®«Û3õîû4.­û&#39;Ç¦ípú!ÚUãÝÜ»5#i&amp;+ã~X4%ÇÌ&gt;X¼°¶¡§3Ò¹Ï½J&quot;&quot;U7
+ñ&quot;D]ÒJ8ÝªÅZ`*z]&quot;C¯.¾7³a&amp;Òú@Ö8sÖ%YÞÔnrèJZekü39^HÖ¬ÊaM^24¿|A*û4§dÇýv4°eIUí ]mêhUËÔÔÅ§å¿SM=±ÞÀë½Ð06¶ÙÀÄbrCC{$ã°BdhÎ%~#dòw¬« 4 [É_F2æ=¬5ûb`ÊØ3fÏ½ÊÆMUaÉJ/ÆÙè«Ýº,t´°ðY¿áæÚ©®··g=µºa Ú¦S]ÈÖ®àï1Ô$3kzÂÖMÎ2paW ²7öåp$&quot;&quot;GóIàXÐÜìÂ §&quot;³$p.*¹X(\D®Àµ¨ü¦e8nqCîæÀ 7	¡`!&quot;ö| GÐp¢DC F@Õ)z5Ù­döä x=ÛÖÊgBRIµi&quot;lZÐy4zÄ0(G2JIB?óÅ¬`ó»È!AN	ýÂ¼áögx=Ã§ òKÖ?I|FßßÖ¼¹[cUe_[-!5êÑM3yÆO^û*FF·ÏcxõWtC5¤éóÚ(²´_ß ¯NôO`l|CxÉ+äv^rêuº5NéaÞBpvà¹R&lt;zÜÕiËð;Ä0ãYáî#Kõd|hÐ¤KFäo¹FB¢w+9àý&gt;DUàs¦qxzô÷o4¿ìWÇ\~ÙôêýÕlßøºÑ&#39;N7P+fäÓËÄÔ¨GHd!	#É:?è ÄzXA¢$¿$!Dñ¬¸5ÎÉ)«©MTÒ¯ÅÑúPÐ¾U?l7m$2UÖBÝ¾Öñð¨¨V¹í@Z´lEJeMàPmiÖÄ
+ªFéÔÐpt,í5j×¼ZtXH#¢á=z¦pÊñìÕ8Â]Y`¥6õÎÝ£z¢jjqwÂmmZsÀ5K5ÙóypAAÌóÉ(cY±m³DÅiÏ+±ô¢^7vdK4u(Éå$×TÁ)öJ±ïs¬m¥T4XszBeòÝu:Y»@&quot;&#39;d6ª¾Sô§1åz@Ùã;30{!Ê©xÎ#&amp;óy&lt;E%§è·Èxs#_ÀµÝtnö^l¯N­ò|Oº)¢Çæ$KÂ´néOðèö.&quot;C¨jEa
+:öEs¡viãxH3÷û ml¼o,ð/Í[Oå`þ4¤P¡Ãp_Uú!kr¿l«ÞTjõÆxÿì*Ò$@)0OâD~«dÐ$C7~¥&#39;QâËE ÅïYAD÷µ/,PÞÎù%ZgxAÏ 
+ìºie
+#)ÿ¤çý]3D2=á¬pZVyX4ô´k§Aßfd.O¦×Ë4p_¯ÞâðsÁdMÜÉ\juSJ)è¾ÙZ}_×è§ÄcÓ ë2P·.ETXLgì3Èeºät8c·ÃÐoìL#¬Ê@&gt; ú4Dèc}u·ÏA­|DÆ4ÐHVW®	kXbReG)Õ J%KäCé¬?`d()Gu±IÅ@ÝÏ}§g4ñ¸Ýz&amp;´ae0n¶&amp;á§62Ã7q¾§èkú6GyMþc
+8C,ý»N¬wnhÊeÙ9ÆhZÃh/¬ûÄÈoé4¯ÍÊ¬ë7w6¬ç£ïÛ¡ôÓ¯qÃhëZRÝqWÕ]g,DpÁtwS*7p
+ºC´îrO=Õh½GÁËè*âàd.WÄÇ¸­¤S.5GÕg d¬|òà{{Ä+0¼L{®©±bÕ«;&gt;
+Íz¯oÆ½{Í ®!ª¥»ö9ü2¤gkÿ=zÙãÙe®Y5-;&#39;ñr±Y0¿Ôç´f=±[I+·&gt;òäÒ§V´ÉµÝ
+â¡0êV9Øh%QI­úA7Ù=#5×­#=Ãç8IÖG/&#39;ÇÁaõ6GÎhÿ³%~a¡Î¼;_yÙa:ºí|Ü±Ï s&lt;%I(
+7TÙ&amp;ÃH|$ôX8)&#39;µEV4«uÑo$ôÈ=aµäÐkÑSæÐ&gt;à4èiÇ ¦%8*Ò2dÚjÐÑP¬äéÙ/ðu¹ã{äNOuÌ@iJI§yjÅ-O2ÓNÃº8äF)Ív7ªo½ ç:»
+þ.3)wÞØZ¤mÓ¯ÒuusE	­ÞÄ(  Ê&gt;qÀc&gt;ÞÆ00ÖTHÀÚ#Â©=n¢Ê&quot;¤K¨:Ñ/&quot;¼Ûº)N®-Ýï@z63HBÈ¢ÆA
+ûñÐÇÏ%O»6@ÞÞÑ³q
+ånïóÜÂ$¸9º,s¹óæQ`SI}PåóÈ=äUô§~¢H$;ZGÈ/³Ö§Ñ7Ó&gt;GJ).Um,$q%x\
+R[@|0/Sºù¼ñ}rÿI¸íÿ@`ëM ¡ãCi7,ë­#Þ­×¬®	îì&lt;ÀXG8¸-PÝ¼;zR!Ýb±)D&amp;ÔÌm%p«/y¯loC¾ÕÔãÇä ã7¢&amp;9~³ÊäxpNB)$¸©fà|3O åÏbµ_±ïúààò¦.éßmuÃÃ÷wA
+¯}¸å}òÝÍào&amp;¨êà7&lt;|¸Aö#v*Ò¡v§¤fâPäzßc¾ÂÕ´Ï·!%8}{÷^XÜ|ÎìÃÁX×¶k¼&amp;+çrÊÉ$`µÛ®N
+	O#Ë°ÆÛÇ°{2«ªz¯ä¡ÞqñVÞä%6ð`%UU&amp;LO]õ Ä)³g#{,Xócf
+Ç÷mai3?K±9tguL£µ{Ìûà¹Ý{+AàiJ,^«¬Â6K{Ù6AÛ#ÂoÆ6EúÄº¾ÜÑ[yèi»õð5@[Øæ¼R£	cÍ.´\ÆzdODRûh8ðÅæ®Ø7Áüõß §Re9CoJYX+sYSÄë¢ûGEÁºîèÉÉIÀòèñ0®1äÉÈúxi#¿Ëñ»¯b+mi*U
+ª&amp;äÆ:mÜbEÊlÉç^)@²Naþ©¨J¢(F\$a$¹µc·Äü1¨ývsC,8ÀÚAÿ s6µÄ¡ûÍLÖ¼LÿMjÊ³¿Ë~g¶Àµ0/»ûÈMû|¶¿òÕ9üÜWpæ¹}Ú³Gï^5Cs_õ÷·z- w[V¡´êpÊypË6;jÔkc3{&#39;æL¦ î0È)uwÅcýÀñ»bu}«Ær[öû|p¤u÷ê5­»&quot;Ü} ¡°urÄÍM¹wöøqªtÆ[vÅRXh³6ú0qêTB\paßmÃ¶éÂsãÍ_ÙqûÍ¸l&gt;´øý÷6ÿ,uKeÅµ8-­)Í09Ü¼kÍºæ)¯Þqº*b?z2»Ó¿mR6Ò&quot; ~«óðsGÃ/0W¥³?ÕYk
+BÞgþ&gt;ô}wï(8S-Fzyñta¼¿ ¹îjÅO*DËéûª«÷Ñé&#39;%û¤\9W¯¨~.¸hÝ&quot;`*5Ì-µb.Jl¥ni8ÞßéQ^Çd¼DÇÔºu!BíDÁ%ÓµÆ	dn:6ÎN¢ÒXÙ²YwäamÑ¥/ýèË¶Qëü1z_3rgÁÑóÃÙÏR4^LtdÅ
+uCø05on(Ãç¿:øa/ÒËù·Ê¸âàAã
+ZÝPT:îûÊßn5E-ÿ®²æ)Ãe6;Ü®)ÑÇmÜåë6¾éqO(¿OèÿêÂ9»,Ûp4g.ÿ¼s·]UÂ ]XÙaÛfzÆ*Fßr¿31X¦RR\}:c+	R¼a7âd|µ¿Ö^ÞH´º*_³ZäÚ!J{ãQ©Î©²Ý&lt; ü°Zê1N¥)mh¿ÏÕ)hÁ:V1t©&gt;ÒauÍõBëmcýNöõçû³õOxCåø³5ý=³uhUKU8ÐVwç4%©ÜÀ¼Ú0×¦{7½x-Ùt_É^ZéÇÓgEklþ´²³¤[Ø?ôqbò¸° ð6¬Ï]9.Ã Þãê{
+,Ï&quot;0µÚ)$,·dÜÏãV _dµþ&quot;¨J{kèáòà8ä·ÈûPò¢Ðï ,¢üJÊlmQØ;Ô=» mÑÞ&#39;ã!&lt;¾=+ât:¹V.äTv)¯´63ÛÜñ~h6é!]ªÅäôÙüÑx\El¶ (*ôª(ö.%,ïüèàá»\Í³ó&gt;Eà·óy:@1.ñÄL(¶.&quot;t[L6.áðC7l&lt;SïI|Æ¦­ÐíS%¹­£½,qÞÍ¨Ë÷+mýl(Úua)Ïê¡êãÙî:óäêô&quot;I@¯ø9$à&#39;÷.DNA{ KÊë5§zk4ÝJFÁ
+Ù|Ý{¿Epo²~ÎFK-~ÔÇcáýÃûénìnÇiwã#Üoù©¼U\ÖvõÊÊsg*VÅúa·Dânú»þçñW_
+Îç9yáS.	ÖÚª¶DZÖ~\¼T0;_©T_*¿ë_¢42Åhó*5îáKo7B&quot;M\®&#39;û[E!¦pkA6QI¸ú8­z^½¶¶î}vØA¥¦°õ±ï0fmCßæ¨^G{¤âñRö&lt;uQNYºÛ¬-*{Ü4x#ôÈµ½ï¾ù[^×·ä4;É§R&#39;±¢÷D²{ÙqÕÁãÁ¥_Ý#0èq`0ØÂyY³]ê&#39;®ä&lt;9vý£·ÑlWªN©×÷vCLÈà²~¼QÐ^%åó)Ú£L1â!ÜZÕJW$ÔØQC,,y«?ZÓf½4|&#39;Æ±Óí²RXÏ=öZ®FöÞwÇ*Èz¾óÁ@á?JqÇÇC1OþÒ.9K:¨ôOÉaEý®Ë`æ0/¬¿xu.B¼»
+ypþ OI&amp;^2KÒóÎ8&#39;É&#39;4sÓ+ô[ ¯Äzcl 2i]3O3!eWlyÇÆVzãDHûDM&gt;&amp;3Ç_ùØþor[æ VÖcKk³ËÓ4æx¬Óúm¯Ä.Ê)©h¦&#39;U&amp;ý CÒÁ,ov§¶´û¢Vo&amp;F°¿)Btúó`¦®J¤ÍS¢±ZÓjJ¸)¹ .,3È¤ràb4(iDnVCð²Úfr¿þ1	ÚØ@Xñ¿9-®ðÏZ\V¹È·6Á0\4¹UÃù¸uÙóØóEÂfù ®É¦ÔÇ7;]fsGh£ÿ¯·~h:5uzªñíj&amp;ú ÐÐHòÇwIü-¯Çæ;§;ó[Ã´FNïñk^\û&quot;oç;K)ÕÏ&lt;?¾ìô²(ô°ÃÃ1¼+=Ð+ËªqÀÂðìæzNá°g2i·G|×ÏP,²p{­òíÕ´¡K¢CD¥HØlÊRo+á;´D§Î!G E@9i P®(¾%èØÐ¢ÜãóÅÌéÝ0­oçür5X2ùXêÂZú×ïòG·µ(þxþ)&amp;ð¼]?ô4.pA½uG·EÖ 63Kc&lt;[ÚT@çðpM3ëlÞ»Õj
+Ò§ÓÐpt;}.Pò6NYpì7èeÉlt öP¥.Ü¤ LæW¨mÞ§3yê0¾¹Çà]yÜZÿßv­o;÷KRDÁ:5¦x}x=îº&amp;7Eõ^åß´rÌ£æ\ÏèòrÕHÑÐçõC}öõJb$ªÝÝ¸ØvnIK=©ÔßN·Õ ZÕ+´eô4Ú`[«ÁØú.ÛÈN)Ìç!b±¢¼gg&#39;ñ7ìK¸&quot;
+Ú¥6ÅM¿ñÚ«Q©CÍ
+hRhC*ÚûXÆM$Lñ.5rÄjt+¼*u¶°anö:Â  -Jc	¬Æ­f_ëÖÌ=ç^UmtõG,¶mq( rP4HÍö`Øy¨ÂÒYÑ\¤:,cÚëñÊÍcÑ9	:D|°	@`£\]çwo»`TK¬u(°3Îó¸÷29 kbzÔêjFjç»AZe|}ºà1ÆãövÛõ«õôá) K¤q?ÄòDçId×Ìxaf¹¨\[¨ær/¸îÒ&gt;ó6UÔøÎÑtÕ^¬ëiáAéGb øáÒòm%?,¬ÖPKNWqJy@å6Â*ÛVwÁ^ùkt2KìÊ¥Ê5=Eÿ}72ã&lt;þCFGÅE&#39;FòÇò*rr»d&quot;µïý$NrRBÚ|Áï¹;(yN3GKEÝöFü]@(ïúrß¼ójú#Ôh÷Y0ØfqBzÿ&quot;m¬I	¶õ7bæH³Hp_ØIx*ý©°ô3íº:sD±+X¬aVRKû_{ñæß1KÌøh¢V&lt;ZzótÑÐHúH[jÕRÄèÏvºF*µº«õ±?fwhs9}¹ò&gt;g0V~&quot;-4Xq¶GÉâø!ºUóX*¥è^ÉË1±ÓÝÝ  ÆÓÍ¡ï&#39;[úº,zygrè²Jæ©.¹ð7bM®à	Ií©3&quot;ÆÓq	¬9U+yBqYg4fõXy;E.kÎ¥u.G\{*©ÕÔÊ=nÑ¹7Óå:âj×0FOj²ß1bQ©íÂ==¼N´TàPõýK°¯¥ÄMÍ©gk&lt;:x9=ÄÏ4üÎüg­&amp;¡¡6¬Ê~KÙÇÕÍGÂÛ%áö±íá&quot;4Á²5xÀÈ;ÍoãÆøìSý©«³¯5èº2ûÞ¬NwáýÙwÏégÛj¨¿ßnqoÿ«t: ëÉ{Z(©1R&lt;ø¿Îéª¶`h[K&quot;;úë³{ºHÈ­}éw ÐTÙ¨Ó©Ã ¨÷Ùÿÿü1ÙÅdáoü=fdU,DAoYjù¶æñ^J$ºÓi3 ÁXa`|9#++ãep¾(@Ä,fÄv)Rîlê\SZLÐÖa{ì©2»Èª7+AGR#OP|Øec¿Ó+ãÁ]²²x
+×kéMn??.SC&amp;NZýSÊ@©e?n~4tÔ11;?ÚØ¥Ã/ãôMëêD÷]_f±ëGhþÔôø²r3³²s(9ùÜÅ¾eöÊHVvfV.7ãáµ³øìZ¼e&gt;&lt;27ýÊ?ªÚÐRFýQâÈ@QØPýãVkáOâø¥Ù1ovG3zñþ4DüþøÁw®|¥×(Õð¯Ä}Û áp(H
+ÿb¤u³{£Ú^þýÿÝqÏ×§úïép&lt;:Ò%Ýhjè:Ç;×¤Ó.t7÷¶´4uãÂþ/¥Ö 
+kmæmK£]õ¡ÍðÚ¥&amp;ØédSê&gt;p7ÿAÔFÐt\¾¿á8?CÚ	®¤Ïøo´í9hG¬íÍÑ­×­°ôé[fÌg&gt;¾¯µnËtª1QëRû?b&quot;û?Ô~ñgq&#39;ÚgJt.µÕ|
++¥N==9þ§Äêjà¥òr×ÜU .ð~¾½Î)sä~&gt;,2W¹Ý«{%7î 4)*ÅhÍ6:lýKôÛß¶öxCØ(ò9&quot;fR&gt;ø	O&quot;AÆ¤üq©ÛzO³d¯y¯U&quot;ðîÓc;ôSóz.£ÏÓwí p NZ?«Å#d²¦MI¶St¼bñ@X5@ÚÚ&gt;(ÐNöDM~-?¿æ8{~m¾ÿ~è}*Yu0t eÏ	.Wøn3Eµv§[oæÏp¹Ó|K¾ÞåR|¦i£ýV¹ða©ÍÑRÜ®R7ç¹Öûê%q­õ¥g®SW+*Éw*+î\g*Fþ3²jgÅÍ®ðÍÁÌõB&lt;Xô¦\vK$º%¿yº²VUPYYPE+0tA´¶Ë8½]K®¡kð&quot;ºøÆ¢Ð)ºâó×@JÍiÙµüP{Ó(Jz» óÂ¦6¤ä©&quot;xmYQëÕiVTkê©²­­le+[ªP*ªl3¯Ä±ÀÈ{j ½
+oäñ&amp;¾Î@ï%=´×ôvÁSI{b÷RZ.#Á7k¼&#39;í|Ò&#39;ëÉ!ñMèô6QôTÒ`4Ð;ló6JÅ·uñ}i&amp;ÔÌrÒªvlê¹ðÊC÷o´(GçÍ©-&#39;çOOâ¹1=Â&#39;rîÞþº0V:æ&amp;]ìÔR³~´ ôáôïã]|Oð½÷³n«oß&gt; fþÇï.¸_ê3@.÷UÔègÐ)u¾¶¦¶åSJU{áÛ(â?q/âº¤r=ÔjÉ¢ãÔ¶,Sk¸å½iãE&lt;û9³LÒñRD	4!´¥3ERH©+4&#39;øW· Í7é¯J&#39;±,ÊGÿÐs	UáIï¦ÕÁ ~4ß9bvtwæ±	´§&amp;CoÚQ78I&amp;é~çiZ-qÓ}ýëx¸7{°ô£XXÛ(£7]ÉûÙn¥ê1ßzÅ½~Þ1ð{Ópñß·c/ðuuÊú\öX¤|,ö¤ñRÓ¥Jwug7ø&gt;Þ&lt;}IàùÎ$¿rýÅæd÷ÅNRB^o7ßÞ AÜ~ø :)3ö5
+_7(t-0;WM³®lÙCXÖ
+Òs{×;ñß;L&gt;±^ A³èàc¦è]å\PÌû±{ô{WµÖ½5qíö.ìnâk#ì[|goV®ml%yü¬u;ãMPê*&gt;jZô·ñp#Ïy1°EO±7Ò¹:ëpÀi Ûåq[L~T¥*ÆélÐÎEÙ2F»&amp;Ú÷T[­Mc-ÓÐpõÙÝÞÁkÙVB&quot;v«( D¨a8]ß\ï±z!%Ñ#j°+X­4·Ì£\åÛ¿&gt;M³{nç&#39;dP*1*ÜBº.Å!åi+òîMm%[Uìîb2wÛì]Ïqã×&#39;LiCÓî^ Ü}¦ìMµI@3 8Óæ RFVez1W_­©sb+Î¡Æ°+ÐQ;YDZØ(Iwè®ºÖ&quot;å¨Bäp8·»~$¨4]{tHêX³E-¡ÎUäTìQ%ÝâÄhÄ 
+|Á &gt;qe¤v¿¬TÓÔ®}ÐÓz;êghß!FåÖW	§áÒÞ¶&amp;·M*×î¹??ÁR?Ðú®Ï]æ-wä|&quot;Za`è912v{7¯å1Ì&lt;5h4xÙT«{DH×¼EÀÅ|X¾ù0è¸U*7À\¹ô¸cCÚëý]nuÙd#õÆË9ìcÖ¸¹/÷só?µªÓ¥pÈYl:»Í¡AQbÎ§ì¦²ü¼æÒºçvF]&#39;M`**±åKkFË2B=ßñÎ*uc.ø¼¾ZÁÁZ@Ô¡Å+ÿuú¥§;ß¡µ¨÷Äh@Õ@;;,/þâtãâ·ÆuÎzÎqö³Î,ÛÐÖ7Üäý½¯°G:¬Ò%%z@×aÓ%m0oe¹.á#3?¯iþ[¹ß]b½;;õÄ#QQÐ+IÖh®®­éáÛ	µUÇ!¯Tþv[¤tÀBí%¢X)Öüª§=&amp;`Ô A()J,/v±2áÅbL²®0ÆÛZjæö6:¿ö2?[S6UÍÂÝý¯SÙÚ,uïÅL9#.12c1iÇjã-)anº¹ú®~SðÞ¯ÃãÿÝ§Õ²ÌÓ$ÂÀ69UqRçÀm&gt;óÁàú\²DâõÊ¤3®äÅ®/|t´&#39;ÙâvÊÑe+½ïF9¸ö­]L-çVÔS\]É6$´ùÿÜKJâ/³ô$;JM5é¨.¹]Ü^7¹vËh©ñ}ÏpÑÄuD&amp;B1¥ÇRñ(Þè4{ºp+ÌïLÅ&gt;aXl¬Ä&amp;]o¼EÏU}Ú!ÀÎ{)µ(wIÁTt´;¥ôÈªW£&quot;X(Ô×U+§)½WÚ]öøä²pouÇxE3zbbSSÚMí7DÉ,ÃÉµ¿Êùk©àÃùÏãjQîªDx8É«&lt;q«Ô»3tE§;®qøH5ê-ü`Éª(ÂZÑ÷&quot;ZÓÏhö*J~&#39;T%ÉQ³Îp®x)môiÚ	Ö×«S&lt;å}oÃgäÄéáB6ÒD¦zbÈi2£rÔúän)7Öz®²,ÄÖ¶³ »ß²tÇ2­ëHDÕ¯úUÛUïEè»¶ÁÌ¨s	},Z£ÙaÒ0ýôÄj²ÓÆÅ²7T}âWÒpíì:Ód¦íí6öC xÑøQ«{ï6ª¾¹Ê*ðÐÃ#ÍÞf?C9M(.QÿTetPÏ:Õ/µØtJ±Véäf¸}Ï7Å&amp;Ee3KÉ£d%÷&lt;õ_&#39;]ÏË, ó+ü¬ªD¡ú¯á)P!ªPbÒû²`ÇtkäÍÌzWó¹JùñøWpëï;&quot;¸	GÕ©¬þéöñü|ìâ&#39;Úø:¨Ðe½Øah3xÌ/ÒU®1¡&gt;´LnFú©ÐÐ0¨È´&lt;¿40Æ¸©ÈÀfa­],8:§³èeÜÑò`¶£ùøíÆ&#39;&lt;~M$É7Ö¶2Ý0âÂÆ÷lósÙC~Àû¤é¹U+S¨#äsôFd©©S®¶Ø¸´úi¢µc&quot;(M;*g¦ñHåfAfÛÅUvÃ&amp;kÜàq]Ëö,í,0§JèXkt4Ñ²$wø&lt;°½SiÆíªùK(¿ÜYwè!|t.j¾G¥NT[×ó¹}yEà
+lìäNþ°ÞÙ¥¸®E2­Þ¸ÞÐË¼tÞ·ùÆRç¦/¯üÉµq}ê»ßlg-ìHæ¬KT½ÉQö·44ë¼ XÆýRZ }T¨Öê³&quot;ýø±!Ô´ØüÏ5ò~éP²¬|Ê¨muó°ÑvÂÁä~æ6ó¨å:ËOte3¤;ßâÃW]$*!Ò5ÈÀÇÜwôD°ãóxAIÿ@-5LãBöö5¼?øa77-§7Ò6õÎ¸PKº¨¯îÕåðádvkáD|u~ËÄà¤ÕTL
+áêÚæjÆéM­¦¹¼ÑXÁolÊ%2#{R§Hnö¬e½Ô­rè|y·æJ±×¨\_AJ·^&quot;ý&quot;(ÔY:/s.ýô&lt;ÛWGAz2¥°©ºqéçÐ·¸ÙNßìx³Ñ£ADÜ£f7§$	Nð¼ÿ¼/t 32¾Õ]¯vkÜÅ÷.%Vì¼qÌk.ºâé×jªA¥¡góÕZ²^UnTª~Qö2Úg[¤2¢,«k »T£ûØ_®u´q®¥XïÌ%ï&quot;&gt;åÞ£nzHÖi²Mó,Äy{öÇUQýRBÃY;Éyv¡»p¼êãá&#39;O&#39;x\å!*îN´À|6Ôë=c\ßaØìÁ&gt;«ÿZ\Ì_ýJSêf&lt;¥UµüGò9\`­Y°À­Ñ×¹oªjfâG*_8ææUú=øK;?S:NýBÿ±ØØ4¦Wß{S
+~oÍa¿ÛnÖ«Å¼¨º*íÈ[PmfÏYN#O«Íá q¶áÎ¦ÿß&quot;ó44ZjINo/FÓÎMiIF&amp;Ãd8#ô¢.þXe¾t8MS¨Ø¯´	¦J.fÐ³l2¨­TÿTSôKà½AK1úõ&gt;ïÕ#¯1:VlÇê0[¡;à-£è~æþZµE&#39;ÎìÞl;»Û³+ß5uOvÉîMqsa¸|èðée\íx£×g0x/hxgÞ@.ìüÞ£àíl
+JPÃH&gt;ìðÉE»*9þ¥QU×mÔÃrá¹héÄ¥ÕÌ`©þÝM:åH	è&quot;¹kjtÊâ$rÞ)w&amp;2Û@ f¸Udp¼¤¸óÐd\ÂJà.ßEN±º°*Q&gt;  wêáåIü¥ü7^§4ä×cL¥nzöÌ+ÁAV[M£k,f&lt;a# I»fÃP$òµi×(bÒÃë¨È¬øTëêþ ++Ât¤÷Ã¨J%¥&lt;ÇQ»3±AúÃM¼g¦\©ÂçG(#)DßVÏ0ÃlÈm&amp;f×ÈyOèÁPS¢Ý:_ûÉ¯fX°QÎ´ X.Íj.&lt;Ýojy¶#|MU§Y&quot;ÝÂ+ê²Íép¶(áí=ÈíFºJuá	AN@ãäøsU&#39;V;|_øÅÅÍª°[h0kËKRjáÂú_ÕÌýóqóï¸_,]DsB££)ZaúÌÉ6¸ùy±L¾Ê¦ÜrnÝÛU¸áv zÄRbÜä
+0BYÓ
+LÀÌ{ÜU©+Éy¨½ÄõFÓ&#39;jCCPòð2CEYF8¶Ä®@Ü/#GcÂéÞÖOÂÿ¾±îvàP&gt;Ný®6/6»RÀTeæÿÑøX¨ ÉRøhaFfZZU[·ý&quot;®Ùu¼0ÓC|xRU¶7Æ
+1[}!ìMCA(VI«bxM±USuêaÖ2ìphÇáÐ|ÕµÎñ8ÄË&#39;¬Å
+7 ?ív²×&quot;a¨Ý+6©ªmSÍõYdÖîzk©=Ñºx/È©BÇy¬&#39;ÌhÐìªÎûáLZJäìMé	,0HáiâbÍ;v=2;/ýçä¹ÓxQÏÂc²¤@hÖ½él)ÓKLJ$-Dà»¥1~¸Ò-?Ú¾ë£C%M¢ã\*ÇAgMðn{¯j_ïL¼¼Áõ4®ñív?ë4¹~¾Ó5¶à¯NKü5ù¢ScqãûÄy6´û-ÿÊ!&lt;WBÅ8Ïív¤BÆ`þ/=è­C½IçÈòjìï÷âõågãI4vO2cËûHøîÈÕ?åÙÀþCM%Eù#û½J~):UÉù×Ð$Ûë±&lt;@½4MÌÅ×©Qìc·Y4U§áY-CHÒKú.³1§Éìæ..c)Øa­¼BÏ1 1õèór6U«¿O°bckoÿ¼@ðzïG±ü·%)¯ÁØ~yÉfòÛÿ¼c#;6	hÄ^Ýñoq\|à)`ñS¿G%ýNXªØ±L hêù;²/wIÇ&gt;ÝV+£&gt;Ã?GÖOÊ®^yÁ^FëC½kßüÔáðÊ5¶²5wckUÊH¦ïhó.;pUu&gt;3ðGÈj´8²cI¤p}9éWGþýå\¤òê%æ__ðîÆñsk[Å_Û?/ JÂ@¼&#39;Pzi&quot;ïú{}=Êg¦&amp;4$&amp;@ÕVâÀY[­ÐA)JÉÐÍ¬J ÜtÁ¤ èD@¤@b Ò^JÀ+¹ S[$L+&amp;Ó°À ä®mËl¨0½ BümP4BLÝJ@ÁVPÔå¶¹Ãpö×CðQù½Ie$ à©:`!¦`Î,#ð +xbL¯Ä¼ âà¡þ+[ðYÀ@¤ÀI²*we I4íÈTÍ&gt;{ :&amp;«!Ò9ß´;Ø-=cæ!aþ=QSëk|½ýÐ+@ã-/X#sDÀ&lt;Ô 8^é,8(-åY \æ`3`üt0NÖ³$Ý0+ûÉÄ©uN$%¹îO,w± &quot;L=ëe-Ö£}°§¹Öõ1eÍMÄMMFP0)¢Hä*Db6ºB
+)¹0FBÌèÉ¬{ëc%Çjéu=ëJ5Ve;)¾»ÐogJ«N7WÊ^7R±xKÂ[B
+%9EB6¬I÷OÆ&quot;Èà\áË&#39;ÝªËÚLòÆxÕ)BIÈz+ë1Ð;=.f¢u¸N&quot;rÚ&lt;=2ú&#39;HÜl¿(&quot;	ì_ Í½ip&amp;Ð ³ê=ÀÓæ¯&lt;ÖîÜ¥+O]qãÖs2¤d± ä)tPtÃKa¨Ì§ä;Ê4ûºé_GAÙ7tÀ&quot;D)V~&amp;LÅ1ósñË¦&#39;Å&gt;vª½,U6{²#Ý¿Ó9Ê%[¦98ù3®*¸q+_&lt;&lt;yñöM&gt;zôâ³#eï?ÿ~T¡E&quot;#&amp;Øö?ü©BèN#¹ë¸#e8ñ²¡`çË. wdÃ¢%X¶bÕ	ví!abb;J´FpúÞ®¡¨Á0%À0Èf÷ä(WªJ¥jEü|q[l¥YîB¶xÛ{ÞPËÈ[ÞõfIð&gt;Ò&gt;Ö?Sé}¿d¾ºårÈp%)=ªE §Ù/éGºìR©Ð¨ezZ\s:ÇcÛÏ-8Ó¼¦¼¢0$i_zöµé&lt;êsTêHîkô°äÚëe·Ý_uÑÃ8¡èÈò3×ægÌWG¨»úÜòÔöÍúó÷áKÄ°$b³¡õýDWÅ~ÊêGÐÞ&lt;
+Åî±*möÕ¤Ïú§v¸{ùÃ½as9®ºÍ¹Å©{yLÕÁ=·åïö,v   </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Age: 9094</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p>
+
+<p>Cache-Control: no-cache, no-store, must-revalidate, private</p>
+
+<p>Pragma: no-cache</p>
+
+<p>Expires: 0</p>
+
+<p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+						
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Cross-Domain Misconfiguration</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10098/">Cross-Domain Misconfiguration</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/264.html">264</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>14</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://vulncat.fortify.com/en/detail?category=HTML5&amp;subcategory=Overly%20Permissive%20CORS%20Policy">https://vulncat.fortify.com/en/detail?category=HTML5&amp;subcategory=Overly%20Permissive%20CORS%20Policy</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="https://caniuse.com/stricttransportsecurity">https://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc6797">https://datatracker.ietf.org/doc/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Retrieved from Cache</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10050/">Retrieved from Cache</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a></li>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a></li>
+										<li><a
+											href="https://www.rfc-editor.org/rfc/rfc9110.html">https://www.rfc-editor.org/rfc/rfc9110.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
