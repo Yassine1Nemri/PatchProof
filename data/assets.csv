@@ -1,0 +1,6 @@
+hostname,ip,os,role,owner,exposure,criticality,status
+DC01,172.16.220.10,Windows Server 2022 Standard Evaluation,Active Directory DNS DHCP,Lab Admin,Internal,Critical,Verified
+WIN-CL,172.16.220.11,Windows 10 Education 22H2,Domain Workstation,Lab Admin,Internal,Medium,Verified
+WEB01,172.16.220.137,Ubuntu Server,Web Server,Lab Admin,Lab Network,High,Verified
+KALI-SCAN,172.16.220.135,Kali Linux,Vulnerability Scanner,Lab Admin,Lab Network,Not Applicable,Verified
+MS2,172.16.220.140,Metasploitable 2,Legacy Vulnerable Target,Lab Admin,Lab Network,Low,Verified

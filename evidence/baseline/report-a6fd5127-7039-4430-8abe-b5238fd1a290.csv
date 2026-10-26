@@ -1,0 +1,230 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,QoD,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+172.16.220.10,,135,tcp,5.0,Medium,80,"Mitigation","DCE/RPC and MSRPC Services Enumeration Reporting","Distributed Computing Environment / Remote Procedure Calls
+  (DCE/RPC) or MSRPC based service enumeration reporting.","Here is the list of DCE/RPC or MSRPC services running on this host via the TCP protocol:
+
+Port: 49664/tcp
+
+     UUID: 0b1c2170-5732-4e0e-8cd3-d9b16f3b84d7, version 0
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Annotation: RemoteAccessCheck
+
+     UUID: 12345678-1234-abcd-ef00-01234567cffb, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Named pipe : lsass
+     Win32 service or process : Netlogon
+     Description : Net Logon service
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ab, version 0
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : LSA access
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ac, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : SAM access
+
+     UUID: 51a227ae-825b-41f2-b4a9-1ac9557a1018, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Annotation: Ngc Pop Key Service
+
+     UUID: 8fb74744-b2ff-4c00-be0d-9ef9a191fe1b, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Annotation: Ngc Pop Key Service
+
+     UUID: b25a52bf-e5dd-4f4a-aea6-8ca7272a0e86, version 2
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Annotation: KeyIso
+
+     UUID: c9ac6db5-82b7-4e55-ae8a-e464ed7b4277, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Annotation: Impl friendly name
+
+     UUID: e3514235-4b06-11d1-ab04-00c04fc2dcd2, version 4
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49664]
+     Annotation: MS NT Directory DRS Interface
+
+Port: 49665/tcp
+
+     UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49665]
+
+Port: 49666/tcp
+
+     UUID: f6beaff7-1e19-4fbb-9f8f-b89e2018337c, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49666]
+     Annotation: Event log TCPIP
+
+Port: 49668/tcp
+
+     UUID: 0b1c2170-5732-4e0e-8cd3-d9b16f3b84d7, version 0
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49668]
+     Annotation: RemoteAccessCheck
+
+     UUID: 12345678-1234-abcd-ef00-01234567cffb, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49668]
+     Named pipe : lsass
+     Win32 service or process : Netlogon
+     Description : Net Logon service
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ab, version 0
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49668]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : LSA access
+
+     UUID: 51a227ae-825b-41f2-b4a9-1ac9557a1018, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49668]
+     Annotation: Ngc Pop Key Service
+
+     UUID: 8fb74744-b2ff-4c00-be0d-9ef9a191fe1b, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49668]
+     Annotation: Ngc Pop Key Service
+
+     UUID: b25a52bf-e5dd-4f4a-aea6-8ca7272a0e86, version 2
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49668]
+     Annotation: KeyIso
+
+     UUID: e3514235-4b06-11d1-ab04-00c04fc2dcd2, version 4
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49668]
+     Annotation: MS NT Directory DRS Interface
+
+Port: 49669/tcp
+
+     UUID: 3a9ef155-691d-4449-8d05-09ad57031823, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49669]
+
+     UUID: 86d35949-83c9-4044-b424-db363231fd0c, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[49669]
+
+Port: 49670/tcp
+
+     UUID: 0b1c2170-5732-4e0e-8cd3-d9b16f3b84d7, version 0
+     Endpoint: ncacn_http:172.16.220.10[49670]
+     Annotation: RemoteAccessCheck
+
+     UUID: 12345678-1234-abcd-ef00-01234567cffb, version 1
+     Endpoint: ncacn_http:172.16.220.10[49670]
+     Named pipe : lsass
+     Win32 service or process : Netlogon
+     Description : Net Logon service
+
+     UUID: 12345778-1234-abcd-ef00-0123456789ab, version 0
+     Endpoint: ncacn_http:172.16.220.10[49670]
+     Named pipe : lsass
+     Win32 service or process : lsass.exe
+     Description : LSA access
+
+     UUID: 51a227ae-825b-41f2-b4a9-1ac9557a1018, version 1
+     Endpoint: ncacn_http:172.16.220.10[49670]
+     Annotation: Ngc Pop Key Service
+
+     UUID: 8fb74744-b2ff-4c00-be0d-9ef9a191fe1b, version 1
+     Endpoint: ncacn_http:172.16.220.10[49670]
+     Annotation: Ngc Pop Key Service
+
+     UUID: b25a52bf-e5dd-4f4a-aea6-8ca7272a0e86, version 2
+     Endpoint: ncacn_http:172.16.220.10[49670]
+     Annotation: KeyIso
+
+     UUID: e3514235-4b06-11d1-ab04-00c04fc2dcd2, version 4
+     Endpoint: ncacn_http:172.16.220.10[49670]
+     Annotation: MS NT Directory DRS Interface
+
+Port: 56826/tcp
+
+     UUID: 0b6edbfa-4a24-4fc6-8a23-942b1eca65d1, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56826]
+
+     UUID: 12345678-1234-abcd-ef00-0123456789ab, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56826]
+     Named pipe : spoolss
+     Win32 service or process : spoolsv.exe
+     Description : Spooler service
+
+     UUID: 4a452661-8290-4b36-8fbe-7f4093a94978, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56826]
+
+     UUID: 76f03f96-cdfd-44fc-a22c-64950a001209, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56826]
+
+     UUID: ae33069b-a2a8-46ee-a235-ddfd339be281, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56826]
+
+Port: 56832/tcp
+
+     UUID: 50abc2a4-574d-40b3-9d66-ee4fd5fba076, version 5
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56832]
+     Named pipe : dnsserver
+     Win32 service or process : dns.exe
+     Description : DNS Server
+
+Port: 56838/tcp
+
+     UUID: 367abb81-9844-35f1-ad32-98f038001003, version 2
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56838]
+
+Port: 56846/tcp
+
+     UUID: 5b821720-f63b-11d0-aad2-00c04fc324db, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56846]
+
+     UUID: 6bffd098-a112-3610-9833-46c3f874532d, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56846]
+
+Port: 56859/tcp
+
+     UUID: 897e2e5f-93f3-4376-9c9c-fd2277495c27, version 1
+     Endpoint: ncacn_ip_tcp:172.16.220.10[56859]
+     Annotation: Frs2 Service
+
+Note: DCE/RPC or MSRPC services running on this host locally were identified. Reporting this list is not enabled by default due to the possible large size of this list. See the script preferences to enable this reporting.
+",1.3.6.1.4.1.25623.1.0.10736,"",9307b44b-3e77-4ab5-b8d8-1c81c26c1aae,"PatchProof - DC01 Baseline Scan",2026-10-21T16:58:59Z,470092c1-c921-4c8e-8ba4-efa85ea18071,"An attacker may use this information to gain more knowledge about
+  the remote host and to conduct further attacks based on it.","Filter incoming traffic to this ports.","All systems exposing / disclosing information via DCE/RPC or
+  MSRPC services.","DCE/RPC or MSRPC services running on the remote host can be
+  enumerated by connecting on port 135 and doing the appropriate queries.","Reports previously collected (via 'DCE/RPC and MSRPC Services
+  Enumeration' OID: 1.3.6.1.4.1.25623.1.0.108044) DCE/RPC or MSRPC services.
+
+  This VT is reporting a severity by default. If the scanned network is e.g. a private LAN / private
+  WAN which contains systems not accessible to the public (access restricted) and it is accepted
+  that the service is disclosing information to this network please set the 'Network type'
+  configuration of the following VT to e.g. 'Private LAN' or 'Private WAN':
+
+  Global variable settings (OID: 1.3.6.1.4.1.25623.1.0.12288)
+
+  In this case a 'Log' level result is used instead.
+Details:
+DCE/RPC and MSRPC Services Enumeration Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.10736)
+Version used: 2026-09-02T05:46:18Z
+","","","",""
+172.16.220.10,,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 808097
+Packet 2: 809161
+",1.3.6.1.4.1.25623.1.0.80091,"",9307b44b-3e77-4ab5-b8d8-1c81c26c1aae,"PatchProof - DC01 Baseline Scan",2026-10-21T16:58:59Z,30d7743c-f21f-4d5d-af6a-7a96ef2458fb,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""

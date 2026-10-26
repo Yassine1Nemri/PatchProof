@@ -1,0 +1,100 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,QoD,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+172.16.220.137,,5000,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following input fields were identified (URL:input name):
+
+http://172.16.220.137:5000/login:password
+",1.3.6.1.4.1.25623.1.0.108440,"",04202b9e-3d8f-45a9-95b7-af973a33b231,"PatchProof - WEB01 Baseline Scan",2026-10-21T15:37:44Z,adf3dec6-8384-4adb-af83-6555c6ba2923,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+172.16.220.137,,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 592454924
+Packet 2: 592455980
+",1.3.6.1.4.1.25623.1.0.80091,"",04202b9e-3d8f-45a9-95b7-af973a33b231,"PatchProof - WEB01 Baseline Scan",2026-10-21T15:37:44Z,f4ebaa8f-58d8-4eb1-9515-6058fa0ecb02,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""
+172.16.220.137,,22,tcp,2.6,Low,80,"Mitigation","Weak MAC Algorithm(s) Supported (SSH)","The remote SSH server is configured to allow / support weak MAC
+  algorithm(s).","The remote SSH server supports the following weak client-to-server MAC algorithm(s):
+
+umac-64-etm@openssh.com
+umac-64@openssh.com
+
+
+The remote SSH server supports the following weak server-to-client MAC algorithm(s):
+
+umac-64-etm@openssh.com
+umac-64@openssh.com
+",1.3.6.1.4.1.25623.1.0.105610,"",04202b9e-3d8f-45a9-95b7-af973a33b231,"PatchProof - WEB01 Baseline Scan",2026-10-21T15:37:44Z,e9a35dae-3575-4782-bcb4-b7792d0e63e5,"","Disable the reported weak MAC algorithm(s).","","","Checks the supported MAC algorithms (client-to-server and
+  server-to-client) of the remote SSH server.
+
+  Currently weak MAC algorithms are defined as the following:
+
+  - MD5 based algorithms
+
+  - 96-bit based algorithms
+
+  - 64-bit based algorithms
+
+  - 'none' algorithm
+Details:
+Weak MAC Algorithm(s) Supported (SSH)
+(OID: 1.3.6.1.4.1.25623.1.0.105610)
+Version used: 2024-06-14T05:05:48Z
+","Product: cpe:/a:ietf:secure_shell_protocol
+Method: SSH Protocol Algorithms Supported
+(OID: 1.3.6.1.4.1.25623.1.0.105565)
+","","",""
+172.16.220.137,,,,2.1,Low,80,"Mitigation","ICMP Timestamp Reply Information Disclosure","The remote host responded to an ICMP timestamp request.","The following response / ICMP packet has been received:
+- ICMP Type: 14
+- ICMP Code: 0
+",1.3.6.1.4.1.25623.1.0.103190,"CVE-1999-0524",04202b9e-3d8f-45a9-95b7-af973a33b231,"PatchProof - WEB01 Baseline Scan",2026-10-21T15:37:44Z,b472af69-9b16-4b3b-b863-da9758521907,"This information could theoretically be used to exploit weak
+  time-based random number generators in other services.","Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)","","The Timestamp Reply is an ICMP message which replies to a
+  Timestamp message. It consists of the originating timestamp sent by the sender of the Timestamp as
+  well as a receive timestamp and a transmit timestamp.","Sends an ICMP Timestamp (Type 13) request and checks if a
+  Timestamp Reply (Type 14) is received.
+Details:
+ICMP Timestamp Reply Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.103190)
+Version used: 2025-01-21T05:37:33Z
+","","","DFN-CERT-2014-0658,CB-K15/1514,CB-K14/0632",""

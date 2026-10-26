@@ -1,0 +1,148 @@
+# PatchProof
+
+**AI-assisted vulnerability management — from scanner evidence to verified remediation.**
+
+Greenbone / OpenVAS · Tenable Nessus · OWASP ZAP · FIRST EPSS · CISA KEV · Python · Ollama Qwen3 · PostgreSQL · Grafana
+
+> A hands-on Vulnerability Operations Center (VOC) portfolio project built in a local VMware lab. PatchProof consolidates findings, enriches CVEs with exploitation intelligence, prioritizes work using deterministic rules, generates reviewable AI recommendations, and tracks fixes through verification.
+
+![PatchProof executive vulnerability dashboard](screenshots/grafana-executive-final.png)
+
+*Executive dashboard backed by PostgreSQL. The latest database check recorded **8 outstanding operational findings** and **2 verified remediations**. Screenshots reflect the state at capture time and may show baseline counts in individual charts.*
+
+## Results at a glance
+
+| Baseline findings | Unique CVEs enriched | AI assessments drafted | Verified fixes |
+|:---:|:---:|:---:|:---:|
+| **80** | **93** | **10** | **2** |
+
+- **76 Greenbone/OpenVAS + 4 OWASP ZAP** findings were imported and prioritized.
+- **125 CVE-to-finding associations** were analyzed with FIRST EPSS and CISA KEV data; **2 unique KEV CVEs** were associated with the intentionally vulnerable MS2 training target.
+- The operational-like backlog changed from **10 to 8** after two WEB01 fixes were independently checked.
+- AI analysis runs locally with **Ollama `qwen3:4b`**; all generated recommendations remain **pending analyst review**.
+
+> **Scope:** These numbers describe the **imported Greenbone + ZAP dataset**, not all vulnerabilities in the lab. Nessus authenticated scans were performed, but their findings are **not imported** into these totals. MS2 training exposure is separated from operational remediation metrics.
+
+## Architecture
+
+![PatchProof system architecture](screenshots/PatchProof_Architecture.png)
+
+**Implementation flow:** VMware lab assets → Greenbone/ZAP scanner exports → Python normalization and CVE correlation → EPSS/KEV enrichment and deterministic prioritization → Ollama analysis → PostgreSQL → Grafana. Verified WEB01 remediation evidence closes the reporting loop. **Nessus is assessment evidence only**, not an integrated source in the current database.
+
+## What I implemented
+
+| Capability | Implementation |
+|---|---|
+| **Lab & asset inventory** | VMware NAT lab with DC01 (Windows Server/AD), WIN-CL (Windows workstation), WEB01 (Ubuntu/Flask/Apache), MS2 (intentionally vulnerable), and Kali scanning VM. |
+| **Vulnerability assessment** | Greenbone/OpenVAS baseline exports, ZAP web-app assessment, and separate Nessus authenticated scan evidence for DC01 and WEB01. |
+| **Data engineering** | Python scripts to import, normalize, merge, extract CVEs, and preserve original scanner records. |
+| **Threat intelligence** | FIRST EPSS probability scores and CISA KEV membership for observed CVE associations. |
+| **Prioritization** | Explainable heuristic using finding severity, asset context, and vulnerability intelligence; MS2 excluded from operational queues. |
+| **Local AI** | Ollama Qwen3 drafts technical risk, potential impact, remediation, verification, and limitations in structured JSON. |
+| **Executive reporting** | PostgreSQL storage, remediation tracking, and Grafana panels querying live database views. |
+| **Verification** | HTTP header before/after evidence and fresh OWASP ZAP review for two WEB01 fixes. |
+
+## Assessment evidence
+
+<details>
+<summary><b>Greenbone / OpenVAS — intentionally vulnerable MS2 baseline</b></summary>
+
+![OpenVAS MS2 baseline dashboard](screenshots/openvas-ms2-baseline-dashboard.png)
+
+The exported MS2 baseline contained **70 severity-classified findings**. This intentionally vulnerable machine is a training target, not a production-like asset.
+
+</details>
+
+<details>
+<summary><b>Nessus — authenticated Windows Server assessment</b></summary>
+
+![Nessus authenticated DC01 assessment](screenshots/nessus-dc01-authenticated.png)
+
+Nessus provided additional assessment evidence, including Windows update-related findings. Its results have **not been ingested** into the 80-row unified dataset.
+
+</details>
+
+<details>
+<summary><b>OWASP ZAP — original WEB01 passive findings</b></summary>
+
+![ZAP baseline passive alerts](screenshots/zap-web01-passive-findings.png)
+
+The initial ZAP assessment reported missing response security headers among other alert categories. Third-party origins were excluded from the four imported WEB01 alert instances.
+
+</details>
+
+<details>
+<summary><b>Windows Server — installed infrastructure roles</b></summary>
+
+![DC01 Windows Server Manager roles](screenshots/dc01-windows-server-roles.png)
+
+DC01 provided AD DS, DNS and DHCP; IIS and WSUS roles were also present. **WSUS role installation does not establish successful client registration or deployed patches.**
+
+</details>
+
+## Remediation verified: WEB01
+
+Two baseline findings were addressed by adding response headers to the Flask application on `WEB01`:
+
+```http
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+```
+
+| Finding | Validation | Recorded state |
+|---|---|---|
+| Missing Anti-clickjacking Header | Header present; alert absent from fresh ZAP results for tested requests | **Verified** |
+| X-Content-Type-Options Header Missing | Header present on tested HTML/CSS responses; alert absent from fresh ZAP results | **Verified** |
+
+![OWASP ZAP after WEB01 header remediation](screenshots/zap-web01-verified-remediation.png)
+
+The follow-up ZAP session still showed **CSP Header Not Set** and **Server Version Disclosure**. PatchProof therefore records **two specific verified fixes**, not a claim that WEB01 is vulnerability-free.
+
+**Saved evidence:** [Baseline ZAP report](evidence/baseline/2026-10-24-ZAP-Report-.html) · [Verification ZAP report](evidence/remediation/web01-zap-rescan.html) · [Before headers](evidence/remediation/web01-before-headers.txt) · [After headers](evidence/remediation/web01-after-headers.txt)
+
+## Processing pipeline
+
+```text
+Greenbone CSV ─┐
+               ├─► Normalize + merge ─► CVE correlation ─► EPSS + CISA KEV
+ZAP HTML ──────┘                                           │
+                                                            ▼
+                                                   Risk prioritization
+                                                     ├─► Ollama AI
+                                                     └─► PostgreSQL ─► Grafana
+                                                                ▲
+                                               Verified ZAP recheck + action log
+
+Nessus: separate assessment evidence; ingestion not implemented yet.
+```
+
+Main scripts live in [`scripts/`](scripts/): `normalize_findings.py`, `import_zap.py`, `merge_findings.py`, `extract_cves.py`, `enrich_and_prioritize.py`, `ai_analyze_findings.py`, `import_postgres.py`, and `finish_patchproof.py`.
+
+This is a **reproducible workflow**, not a one-command installer: scanning requires the local VMs and tool configurations; enrichment requires access to FIRST/CISA; AI analysis requires a running local Ollama model; and data import requires the configured PostgreSQL container.
+
+## Project structure
+
+```text
+PatchProof/
+├── scripts/       # Scanner ingestion, enrichment, AI, PostgreSQL
+├── data/          # Normalized findings and CVE associations
+├── evidence/      # Baseline exports and verification records
+├── screenshots/   # Selected assessment, dashboard, and remediation captures
+├── diagrams/      # Editable architecture and dashboard definitions
+├── docs/          # Asset inventory and methodology notes
+└── reports/       # Executive, technical, and remediation reports
+```
+
+## Limitations and next steps
+
+- **Incomplete coverage:** WIN-CL authenticated Nessus scanning was unsuccessful; a zero-row Greenbone export does **not** indicate a secure host.
+- **Nessus integration:** Authenticated results were reviewed separately but not merged into the PostgreSQL-backed figures.
+- **WSUS:** The server role and policy were configured, but client registration and patch deployment were **not verified**.
+- **MS2 isolation:** The deliberately vulnerable target previously had NAT connectivity; complete isolation should be confirmed before further use.
+- **Remaining findings:** WEB01 still has other outstanding web/security configuration findings. AI outputs need human validation before operational use.
+
+**Project status:** Completed **portfolio MVP** demonstrating discovery, assessment, intelligence enrichment, priority scoring, local AI assistance, database reporting, and **two evidence-backed remediations**. Not a production deployment or a full-coverage vulnerability audit.
+
+---
+
+*Authorized lab testing only. All outcome claims are limited to the exported evidence and tested endpoints.*

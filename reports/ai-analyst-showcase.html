@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PatchProof | AI Vulnerability Analyst</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    background: #0b101b;
+    color: #e9eef8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 35px;
+}
+header {
+    border-bottom: 1px solid #29354a;
+    padding-bottom: 25px;
+}
+.brand {
+    color: #61a5fa;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+h1 { font-size: 34px; margin: 12px 0; }
+.subtitle { color: #9aa9bf; }
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 25px 0;
+}
+.metric, .card {
+    background: #151e2d;
+    border: 1px solid #2b394e;
+    border-radius: 12px;
+    padding: 22px;
+}
+.metric span {
+    color: #9aa9bf;
+    font-size: 13px;
+}
+.metric strong {
+    display: block;
+    font-size: 27px;
+    margin-top: 10px;
+    color: #73b3ff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    gap: 18px;
+}
+h2 { font-size: 20px; margin-top: 0; }
+h3 { color: #77aff8; font-size: 14px; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+th, td {
+    text-align: left;
+    padding: 12px 8px;
+    border-bottom: 1px solid #29354a;
+    vertical-align: top;
+}
+th { color: #9aa9bf; }
+.badge {
+    background: #54452c;
+    color: #ffca75;
+    padding: 5px 9px;
+    border-radius: 5px;
+}
+.detail {
+    border-bottom: 1px solid #29354a;
+    padding: 8px 0;
+}
+.detail p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #c9d4e5;
+    white-space: pre-wrap;
+}
+.warning {
+    color: #ffca75;
+    font-size: 13px;
+    margin-top: 18px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">PATCHPROOF / VULNERABILITY INTELLIGENCE</div>
+<h1>AI Vulnerability Analyst</h1>
+<div class="subtitle">
+Evidence-grounded vulnerability analysis • Local Ollama inference
+</div>
+</header>
+
+<div class="metrics">
+<div class="metric">
+<span>AI MODEL</span>
+<strong>qwen3:4b</strong>
+</div>
+<div class="metric">
+<span>GENERATED ANALYSES</span>
+<strong>10</strong>
+</div>
+<div class="metric">
+<span>ANALYST VALIDATION</span>
+<strong>Pending Review</strong>
+</div>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h2>Analyzed Vulnerabilities</h2>
+<table>
+<thead>
+<tr>
+<th>Asset</th><th>Finding</th>
+<th>Priority</th><th>Risk</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td>DC01</td>
+        <td>DCE/RPC and MSRPC Services Enumeration Reporting</td>
+        <td><span class="badge">P3</span></td>
+        <td>47</td>
+    </tr>
+    
+    <tr>
+        <td>WEB01</td>
+        <td>Cleartext Transmission of Sensitive Information via HTTP</td>
+        <td><span class="badge">P3</span></td>
+        <td>42</td>
+    </tr>
+    
+    <tr>
+        <td>WEB01</td>
+        <td>Content Security Policy (CSP) Header Not Set</td>
+        <td><span class="badge">P3</span></td>
+        <td>42</td>
+    </tr>
+    
+    <tr>
+        <td>WEB01</td>
+        <td>Missing Anti-clickjacking Header</td>
+        <td><span class="badge">P3</span></td>
+        <td>42</td>
+    </tr>
+    
+    <tr>
+        <td>DC01</td>
+        <td>TCP Timestamps Information Disclosure</td>
+        <td><span class="badge">P3</span></td>
+        <td>35</td>
+    </tr>
+    
+    <tr>
+        <td>WEB01</td>
+        <td>ICMP Timestamp Reply Information Disclosure</td>
+        <td><span class="badge">P4</span></td>
+        <td>34.82</td>
+    </tr>
+    
+    <tr>
+        <td>WEB01</td>
+        <td>TCP Timestamps Information Disclosure</td>
+        <td><span class="badge">P4</span></td>
+        <td>30</td>
+    </tr>
+    
+    <tr>
+        <td>WEB01</td>
+        <td>Weak MAC Algorithm(s) Supported (SSH)</td>
+        <td><span class="badge">P4</span></td>
+        <td>30</td>
+    </tr>
+    
+    <tr>
+        <td>WEB01</td>
+        <td>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</td>
+        <td><span class="badge">P4</span></td>
+        <td>30</td>
+    </tr>
+    
+    <tr>
+        <td>WEB01</td>
+        <td>X-Content-Type-Options Header Missing</td>
+        <td><span class="badge">P4</span></td>
+        <td>30</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+<div class="card">
+<h2>AI-Generated Assessment</h2>
+<p class="subtitle">WEB01 —
+Content Security Policy (CSP) Header Not Set</p>
+
+    <section class="detail">
+        <h3>Technical Risk</h3>
+        <p>Missing Content Security Policy (CSP) header on the web application (Flask) running on Ubuntu Apache. This allows potential Cross-Site Scripting (XSS) and data injection attacks via untrusted content sources.</p>
+    </section>
+    
+    <section class="detail">
+        <h3>Potential Business Impact</h3>
+        <p>Potential data theft, site defacement, or malware distribution if an attacker successfully exploits untrusted content sources through the web application.</p>
+    </section>
+    
+    <section class="detail">
+        <h3>Recommended Remediation</h3>
+        <p>Configure the Flask application to set the Content-Security-Policy header (e.g., via Flask&#x27;s CSP middleware) and ensure the Apache web server is configured to pass this header to clients. Verify the header is present in the response for the affected URL.</p>
+    </section>
+    
+    <section class="detail">
+        <h3>Verification Procedure</h3>
+        <p>Check the HTTP response headers for the affected URL (http://172.16.220.137:5000/) using `curl -I http://172.16.220.137:5000/` to confirm the presence of the `Content-Security-Policy` header.</p>
+    </section>
+    
+    <section class="detail">
+        <h3>Evidence Limitations</h3>
+        <p>Scanner evidence does not confirm if the CSP header is already set in production; this finding is based on the absence of the header in the scan. No evidence of exploitation or compromise exists.</p>
+    </section>
+    
+<div class="warning">
+AI-generated content requires analyst validation.
+Risk scores are calculated by the deterministic prioritization engine.
+</div>
+</div>
+
+</div>
+</body>
+</html>

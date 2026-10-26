@@ -1,0 +1,312 @@
+finding_id,asset,ip,scanner,title,severity,cvss,cve,cwe,qod,confidence,port,protocol,method,url,description,solution,source_report,status,scan_type,nvt_oid,scan_timestamp,cve_count,cves,max_epss,kev_present,asset_criticality,risk_score,priority,intelligence_status,intelligence_retrieved_at
+ea978e92-4def-4755-adb3-3039c3ceeca8,MS2,172.16.220.140,Greenbone/OpenVAS,Apache Tomcat AJP RCE Vulnerability (Ghostcat) - Active Check,Critical,9.8,CVE-2020-1938,,99,,8009,tcp,,,"Apache Tomcat is prone to a remote code execution (RCE)
+  vulnerability in the AJP connector dubbed 'Ghostcat'.","'- Update Apache Tomcat to version 7.0.100, 8.5.51, 9.0.31 or
+  later
+
+  - For other products using Tomcat please contact the vendor for more information on fixed
+  versions",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.143545,2026-10-20T22:19:04Z,1,CVE-2020-1938,0.9927,Yes,1,79.89,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+a6063606-4f30-4a8a-9215-06ec4b6ae83e,MS2,172.16.220.140,Greenbone/OpenVAS,"PHP < 5.3.13, 5.4.x < 5.4.3 Multiple Vulnerabilities - Active Check",High,7.5,"CVE-2012-1823,CVE-2012-2311,CVE-2012-2336,CVE-2012-2335",,95,,80,tcp,,,PHP is prone to multiple vulnerabilities.,"PHP: Update to version 5.3.13, 5.4.3 or later
+
+  - Other products / applications: Please contact the vendor for a solution",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103482,2026-10-20T22:19:04Z,4,CVE-2012-1823;CVE-2012-2311;CVE-2012-2335;CVE-2012-2336,0.99998,Yes,1,69.0,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+d96bd0b7-c344-4316-b05f-1cc8f8e69f2e,MS2,172.16.220.140,Greenbone/OpenVAS,vsftpd Compromised Source Packages Backdoor Vulnerability - Active Check,Critical,9.8,CVE-2011-2523,,99,,21,tcp,,,vsftpd is prone to a backdoor vulnerability.,"The repaired package can be downloaded from the referenced
+  vendor homepage. Please validate the package with its signature.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103185,2026-10-20T22:19:04Z,1,CVE-2011-2523,0.96184,No,1,64.43,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+89475ccd-1523-49bc-b109-a8267cfab94b,MS2,172.16.220.140,Greenbone/OpenVAS,vsftpd Compromised Source Packages Backdoor Vulnerability - Active Check,Critical,9.8,CVE-2011-2523,,99,,6200,tcp,,,vsftpd is prone to a backdoor vulnerability.,"The repaired package can be downloaded from the referenced
+  vendor homepage. Please validate the package with its signature.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103185,2026-10-20T22:19:04Z,1,CVE-2011-2523,0.96184,No,1,64.43,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+d40ec78a-a0ae-4a6b-86fb-7e472b21eb56,MS2,172.16.220.140,Greenbone/OpenVAS,DistCC RCE Vulnerability (CVE-2004-2687),Critical,9.3,CVE-2004-2687,,99,,3632,tcp,,,"DistCC is prone to a remote code execution (RCE)
+  vulnerability.","Vendor updates are available. Please see the references for
+  more information.
+
+  For more information about DistCC's security see the references.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103553,2026-10-20T22:19:04Z,1,CVE-2004-2687,0.88195,No,1,63.23,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+ca0c0cfb-842e-4a54-8739-c5aa0f7e210c,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: OpenSSL CCS Man in the Middle Security Bypass Vulnerability,High,7.4,CVE-2014-0224,,70,,5432,tcp,,,OpenSSL is prone to a security bypass vulnerability.,Updates are available. Please see the references for more information.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.105042,2026-10-20T22:19:04Z,1,CVE-2014-0224,0.95326,No,1,53.3,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+1d88c005-7a45-4553-a33c-30675530e9fd,MS2,172.16.220.140,Greenbone/OpenVAS,MySQL / MariaDB Default Credentials (MySQL Protocol),Critical,9.8,"CVE-2001-0645,CVE-2002-1809,CVE-2004-1532,CVE-2004-2357,CVE-2006-1451,CVE-2007-2554,CVE-2007-6081,CVE-2009-0919,CVE-2014-3419,CVE-2015-4669,CVE-2016-6531,CVE-2018-15719,CVE-2024-22901,CVE-2026-47847",,95,,3306,tcp,,,"It was possible to login into the remote MySQL using default
+  credentials.","'- Change the password as soon as possible
+
+  - Contact the vendor for other possible fixes / updates",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103551,2026-10-20T22:19:04Z,14,CVE-2001-0645;CVE-2002-1809;CVE-2004-1532;CVE-2004-2357;CVE-2006-1451;CVE-2007-2554;CVE-2007-6081;CVE-2009-0919;CVE-2014-3419;CVE-2015-4669;CVE-2016-6531;CVE-2018-15719;CVE-2024-22901;CVE-2026-47847,0.16118,No,1,52.42,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+2ed4b9b5-ffbc-4dea-8e5b-6c5340899f9e,MS2,172.16.220.140,Greenbone/OpenVAS,UnrealIRCd Backdoor,High,7.5,CVE-2010-2075,,70,,6697,tcp,,,Detection of backdoor in UnrealIRCd.,"Install latest version of unrealircd and check signatures of
+  software you're installing.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.80111,2026-10-20T22:19:04Z,1,CVE-2010-2075,0.83534,No,1,51.53,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+8cc63e3d-91e1-4047-b517-68bcdd07603c,MS2,172.16.220.140,Greenbone/OpenVAS,TWiki < 4.2.4 Multiple XSS / Command Execution Vulnerabilities,Critical,10.0,"CVE-2008-5304,CVE-2008-5305",,80,,80,tcp,,,"TWiki is prone to multiple cross-site scripting (XSS) and
+  command execution vulnerabilities.",Update to version 4.2.4 or later.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.800320,2026-10-20T22:19:04Z,2,CVE-2008-5304;CVE-2008-5305,0.0464,No,1,50.7,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+5afc6a49-4c66-4319-989a-575841bd907f,MS2,172.16.220.140,Greenbone/OpenVAS,Java RMI Server Insecure Default Configuration RCE Vulnerability - Active Check,High,7.5,CVE-2011-3556,,95,,1099,tcp,,,"Multiple Java products that implement the RMI Server contain a
+  vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary code
+  (remote code execution/RCE) on a targeted system with elevated privileges.","Disable class-loading. Please contact the vendor of the
+  affected system for additional guidance.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.140051,2026-10-20T22:19:04Z,1,CVE-2011-3556,0.76405,No,1,50.46,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+388b4333-c2f5-4bd7-b89d-890bd1df23a6,MS2,172.16.220.140,Greenbone/OpenVAS,The rexec service is running,Critical,10.0,CVE-1999-0618,,80,,512,tcp,,,This remote host is running a rexec service.,"Disable the rexec service and use alternatives like SSH
+  instead.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.100111,2026-10-20T22:19:04Z,1,CVE-1999-0618,0.01908,No,1,50.29,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+55c19030-b7ab-40dd-a037-856b20c365b8,MS2,172.16.220.140,Greenbone/OpenVAS,VNC Brute Force Login,Critical,9.0,CVE-2026-65313,,70,,5900,tcp,,,The VNC service is prone to default credentials.,"Change the password to something hard to guess or enable
+  password protection at all.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.106056,2026-10-20T22:19:04Z,1,CVE-2026-65313,0.00266,No,1,50.04,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+ff757d53-4f25-43ab-af0c-59f4fb58a3c6,MS2,172.16.220.140,Greenbone/OpenVAS,Possible Backdoor: Ingreslock,Critical,10.0,,,99,,1524,tcp,,,A backdoor is installed on the remote host.,A whole cleanup of the infected system is recommended.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103549,2026-10-20T22:19:04Z,0,,,No,1,50,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+acba3c18-d52d-4551-84d8-fb598fcf3451,MS2,172.16.220.140,Greenbone/OpenVAS,rlogin Passwordless Login,Critical,10.0,,,80,,513,tcp,,,The rlogin service allows root access without a password.,Disable the rlogin service and use alternatives like SSH instead.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.113766,2026-10-20T22:19:04Z,0,,,No,1,50,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+0af73eef-770a-4035-9a64-b145928ccf05,MS2,172.16.220.140,Greenbone/OpenVAS,Distributed Ruby (dRuby/DRb) Multiple RCE Vulnerabilities,Critical,10.0,,,99,,8787,tcp,,,"Systems using Distributed Ruby (dRuby/DRb), which is available in Ruby versions 1.6
+  and later, may permit unauthorized systems to execute distributed commands.","Administrators of environments that rely on Distributed Ruby should ensure that
+  appropriate controls are in place. Code-level controls may include:
+
+  - Implementing taint on untrusted input
+
+  - Setting $SAFE levels appropriately (>=2 is recommended if untrusted hosts are allowed to submit Ruby commands, and >=3 may be appropriate)
+
+  - Including drb/acl.rb to set ACLEntry to restrict access to trusted hosts",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108010,2026-10-20T22:19:04Z,0,,,No,1,50,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+c89c09d8-1263-4f2d-8c27-c424c6de8b0c,MS2,172.16.220.140,Greenbone/OpenVAS,Operating System (OS) End of Life (EOL) Detection,Critical,10.0,,,80,,,,,,"The Operating System (OS) on the remote host has reached the end
+  of life (EOL) and should not be used anymore.","Update the OS on the remote host to a version which is still
+  supported and receiving security updates by the vendor.
+
+  Note / Important: Please create an override for this result if the target host is a:
+
+  - Windows system with Extended Security Updates (ESU)
+
+  - System with additional 3rd-party / non-vendor security updates like e.g. from 'TuxCare',
+  'Freexian Extended LTS' or similar",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103674,2026-10-20T22:19:04Z,0,,,No,1,50,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+ac7bb092-d08c-48e8-ac80-0592c72c7b42,MS2,172.16.220.140,Greenbone/OpenVAS,PostgreSQL Default Credentials (PostgreSQL Protocol),Critical,9.0,,,99,,5432,tcp,,,"It was possible to login into the remote PostgreSQL as user
+  postgres using weak credentials.",Change the password as soon as possible.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103552,2026-10-20T22:19:04Z,0,,,No,1,50,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+ca11ede8-67a6-4aae-9f42-c06099332fa7,MS2,172.16.220.140,Greenbone/OpenVAS,FTP Brute Force Logins With Default Credentials Reporting,High,7.5,"CVE-1999-0501,CVE-1999-0502,CVE-1999-0507,CVE-1999-0508,CVE-2001-1594,CVE-2013-7404,CVE-2014-9198,CVE-2015-7261,CVE-2016-8731,CVE-2017-8218,CVE-2018-9068,CVE-2018-17771,CVE-2018-19063,CVE-2018-19064,CVE-2018-25147,CVE-2020-36915",,95,,21,tcp,,,"It was possible to login into the remote FTP server using
+  weak/known credentials.",Change the password as soon as possible.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108718,2026-10-20T22:19:04Z,16,CVE-1999-0501;CVE-1999-0502;CVE-1999-0507;CVE-1999-0508;CVE-2001-1594;CVE-2013-7404;CVE-2014-9198;CVE-2015-7261;CVE-2016-8731;CVE-2017-8218;CVE-2018-17771;CVE-2018-19063;CVE-2018-19064;CVE-2018-25147;CVE-2018-9068;CVE-2020-36915,0.53338,No,1,47.0,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+cb93e971-4416-4112-af3f-4d60678ffe9c,MS2,172.16.220.140,Greenbone/OpenVAS,FTP Brute Force Logins With Default Credentials Reporting,High,7.5,"CVE-1999-0501,CVE-1999-0502,CVE-1999-0507,CVE-1999-0508,CVE-2001-1594,CVE-2013-7404,CVE-2014-9198,CVE-2015-7261,CVE-2016-8731,CVE-2017-8218,CVE-2018-9068,CVE-2018-17771,CVE-2018-19063,CVE-2018-19064,CVE-2018-25147,CVE-2020-36915",,95,,2121,tcp,,,"It was possible to login into the remote FTP server using
+  weak/known credentials.",Change the password as soon as possible.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108718,2026-10-20T22:19:04Z,16,CVE-1999-0501;CVE-1999-0502;CVE-1999-0507;CVE-1999-0508;CVE-2001-1594;CVE-2013-7404;CVE-2014-9198;CVE-2015-7261;CVE-2016-8731;CVE-2017-8218;CVE-2018-17771;CVE-2018-19063;CVE-2018-19064;CVE-2018-25147;CVE-2018-9068;CVE-2020-36915,0.53338,No,1,47.0,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+470092c1-c921-4c8e-8ba4-efa85ea18071,DC01,172.16.220.10,Greenbone/OpenVAS,DCE/RPC and MSRPC Services Enumeration Reporting,Medium,5.0,,,80,,135,tcp,,,"Distributed Computing Environment / Remote Procedure Calls
+  (DCE/RPC) or MSRPC based service enumeration reporting.",Filter incoming traffic to this ports.,report-a6fd5127-7039-4430-8abe-b5238fd1a290.csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.10736,2026-10-21T16:58:59Z,0,,,No,5,47,P3,No CVE reference,2026-10-25T09:42:08.176910+00:00
+a8e283f4-2e83-47eb-98f9-13d4b6792770,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection,Medium,5.9,"CVE-2016-0800,CVE-2014-3566",,98,,25,tcp,,,"It was possible to detect the usage of the deprecated SSLv2
+  and/or SSLv3 protocol on this system.","It is recommended to disable the deprecated SSLv2 and/or SSLv3
+  protocols in favor of the TLSv1.2+ protocols.
+
+  Please see the references for more resources supporting you with this task.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.111012,2026-10-20T22:19:04Z,2,CVE-2014-3566;CVE-2016-0800,0.99999,No,1,42.0,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+5afd3602-18bc-42f1-8306-6d4a60b90f94,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection,Medium,5.9,"CVE-2016-0800,CVE-2014-3566",,98,,5432,tcp,,,"It was possible to detect the usage of the deprecated SSLv2
+  and/or SSLv3 protocol on this system.","It is recommended to disable the deprecated SSLv2 and/or SSLv3
+  protocols in favor of the TLSv1.2+ protocols.
+
+  Please see the references for more resources supporting you with this task.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.111012,2026-10-20T22:19:04Z,2,CVE-2014-3566;CVE-2016-0800,0.99999,No,1,42.0,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+adf3dec6-8384-4adb-af83-6555c6ba2923,WEB01,172.16.220.137,Greenbone/OpenVAS,Cleartext Transmission of Sensitive Information via HTTP,Medium,4.8,,,80,,5000,tcp,,,"The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.",report-de7c1f42-eb94-414f-a151-415a4b9b1827.csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108440,2026-10-21T15:37:44Z,0,,,No,4,42,P3,No CVE reference,2026-10-25T09:42:08.176910+00:00
+ZAP-99e54a31e7eab132,WEB01,172.16.220.137,OWASP ZAP,Content Security Policy (CSP) Header Not Set,Medium,,,CWE-693,,High,,,GET,http://172.16.220.137:5000/,"Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.","Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.",2026-10-24-ZAP-Report-.html,Open,,,,0,,,No,4,42,P3,No CVE reference,2026-10-25T09:42:08.176910+00:00
+ZAP-c6ed5f83117c110d,WEB01,172.16.220.137,OWASP ZAP,Missing Anti-clickjacking Header,Medium,,,CWE-1021,,Medium,,,GET,http://172.16.220.137:5000/,The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.,"Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app. If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's ""frame-ancestors"" directive.",2026-10-24-ZAP-Report-.html,Open,,,,0,,,No,4,42,P3,No CVE reference,2026-10-25T09:42:08.176910+00:00
+c3360d85-1b4a-4cfd-bb44-7884cf6dd11f,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Report Weak Cipher Suites,Medium,5.9,"CVE-2013-2566,CVE-2015-2808,CVE-2015-4000",,98,,5432,tcp,,,"This routine reports all weak SSL/TLS cipher suites accepted by
+  a service.","The configuration of this services should be changed so that it
+  does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103440,2026-10-20T22:19:04Z,3,CVE-2013-2566;CVE-2015-2808;CVE-2015-4000,0.9986,No,1,41.98,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+645fc187-08d9-47f7-ab3a-3167edff04f6,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection,Medium,4.3,"CVE-2011-3389,CVE-2015-0204,CVE-2023-41928,CVE-2024-41270,CVE-2025-3200",,98,,5432,tcp,,,"It was possible to detect the usage of the deprecated TLSv1.0
+  and/or TLSv1.1 protocol on this system.","It is recommended to disable the deprecated TLSv1.0 and/or
+  TLSv1.1 protocols in favor of the TLSv1.2+ protocols.
+
+  Please see the references for more resources supporting you with this task.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.117274,2026-10-20T22:19:04Z,5,CVE-2011-3389;CVE-2015-0204;CVE-2023-41928;CVE-2024-41270;CVE-2025-3200,0.98685,No,1,41.8,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+c9e94fd2-1f58-403b-bd14-41cced90faa6,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection,Medium,4.3,"CVE-2011-3389,CVE-2015-0204,CVE-2023-41928,CVE-2024-41270,CVE-2025-3200",,98,,25,tcp,,,"It was possible to detect the usage of the deprecated TLSv1.0
+  and/or TLSv1.1 protocol on this system.","It is recommended to disable the deprecated TLSv1.0 and/or
+  TLSv1.1 protocols in favor of the TLSv1.2+ protocols.
+
+  Please see the references for more resources supporting you with this task.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.117274,2026-10-20T22:19:04Z,5,CVE-2011-3389;CVE-2015-0204;CVE-2023-41928;CVE-2024-41270;CVE-2025-3200,0.98685,No,1,41.8,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+e26c934f-c3f9-4b3f-bd39-61b398ae0f0d,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: RSA Temporary Key Handling RSA_EXPORT Downgrade Issue (FREAK),Medium,4.3,CVE-2015-0204,,80,,25,tcp,,,"This host is accepting 'RSA_EXPORT' cipher suites and is prone
+  to a man-in-the-middle (MITM) vulnerability.","'- Remove support for 'RSA_EXPORT' cipher suites from the
+  service. Please see the references for more resources supporting you with this task.
+
+  - If the service is using OpenSSL: Update to version 0.9.8zd, 1.0.0p, 1.0.1k or later.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.805142,2026-10-20T22:19:04Z,1,CVE-2015-0204,0.98685,No,1,41.8,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+c70c0d56-530b-454e-bd74-9f472ca64bb5,MS2,172.16.220.140,Greenbone/OpenVAS,The rlogin service is running,High,7.5,CVE-1999-0651,,80,,513,tcp,,,This remote host is running a rlogin service.,Disable the rlogin service and use alternatives like SSH instead.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.901202,2026-10-20T22:19:04Z,1,CVE-1999-0651,0.11902,No,1,40.79,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+345863de-3a53-4725-b1f6-b6e87a50d562,MS2,172.16.220.140,Greenbone/OpenVAS,rsh Unencrypted Cleartext Login,High,7.5,CVE-1999-0651,,80,,514,tcp,,,This remote host is running a rsh service.,"Disable the rsh service and use alternatives like SSH
+  instead.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.100080,2026-10-20T22:19:04Z,1,CVE-1999-0651,0.11902,No,1,40.79,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+cfddb52b-3e34-4984-b859-f3389b0b2c23,MS2,172.16.220.140,Greenbone/OpenVAS,Apache HTTP Server httpOnly Cookie Information Disclosure Vulnerability,Medium,4.3,CVE-2012-0053,,99,,80,tcp,,,Apache HTTP Server is prone to a cookie information disclosure vulnerability.,Update to Apache HTTP Server version 2.2.22 or later.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.902830,2026-10-20T22:19:04Z,1,CVE-2012-0053,0.82198,No,1,39.33,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+1c41e668-fe92-496f-b1c5-14a02cd9c640,MS2,172.16.220.140,Greenbone/OpenVAS,UnrealIRCd Authentication Spoofing Vulnerability,High,8.1,CVE-2016-7144,,80,,6697,tcp,,,UnrealIRCd is prone to authentication spoofing vulnerability.,"Update to version 3.2.10.7, 4.0.6 or later.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.809883,2026-10-20T22:19:04Z,1,CVE-2016-7144,0.0127,No,1,39.19,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+7aea45da-dddf-43e6-9b4e-c57cdf0bd3e8,MS2,172.16.220.140,Greenbone/OpenVAS,EasyPHP Webserver <= 12.1 Multiple Vulnerabilities (HTTP) - Active Check,High,7.5,,,99,,80,tcp,,,EasyPHP Webserver is prone to multiple vulnerabilities.,"No known solution was made available for at least one year
+  since the disclosure of this vulnerability. Likely none will be provided anymore. General solution
+  options are to upgrade to a newer release, disable respective features, remove the product or
+  replace the product by another one.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.803189,2026-10-20T22:19:04Z,0,,,No,1,39,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+4d5448c4-804d-489a-9ce9-dfc60b7e1021,MS2,172.16.220.140,Greenbone/OpenVAS,Test HTTP dangerous methods,High,7.5,,,99,,80,tcp,,,"Misconfigured web servers allows remote clients to perform
+  dangerous HTTP methods such as PUT and DELETE.","Use access restrictions to these dangerous HTTP methods
+  or disable them completely.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.10498,2026-10-20T22:19:04Z,0,,,No,1,39,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+4f7f548e-032f-4762-919c-fc9e3e265fde,MS2,172.16.220.140,Greenbone/OpenVAS,"SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)",Medium,5.0,"CVE-2011-1473,CVE-2011-5094",,70,,25,tcp,,,"The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","Users should contact their vendors for specific patch
+  information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.117761,2026-10-20T22:19:04Z,2,CVE-2011-1473;CVE-2011-5094,0.66873,No,1,37.03,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+1faad8a6-cf12-4cec-b4fb-5fdef3d0f44b,MS2,172.16.220.140,Greenbone/OpenVAS,"SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)",Medium,5.0,"CVE-2011-1473,CVE-2011-5094",,70,,5432,tcp,,,"The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","Users should contact their vendors for specific patch
+  information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.117761,2026-10-20T22:19:04Z,2,CVE-2011-1473;CVE-2011-5094,0.66873,No,1,37.03,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+30d7743c-f21f-4d5d-af6a-7a96ef2458fb,DC01,172.16.220.10,Greenbone/OpenVAS,TCP Timestamps Information Disclosure,Low,2.6,,,80,,,,,,"The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.",report-a6fd5127-7039-4430-8abe-b5238fd1a290.csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.80091,2026-10-21T16:58:59Z,0,,,No,5,35,P3,No CVE reference,2026-10-25T09:42:08.176910+00:00
+b472af69-9b16-4b3b-b863-da9758521907,WEB01,172.16.220.137,Greenbone/OpenVAS,ICMP Timestamp Reply Information Disclosure,Low,2.1,CVE-1999-0524,,80,,,,,,The remote host responded to an ICMP timestamp request.,"Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)",report-de7c1f42-eb94-414f-a151-415a4b9b1827.csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103190,2026-10-21T15:37:44Z,1,CVE-1999-0524,0.32154,No,4,34.82,P4,EPSS available,2026-10-25T09:42:08.176910+00:00
+8ba322df-7c54-44b6-8bcd-a163bdf37b04,MS2,172.16.220.140,Greenbone/OpenVAS,Samba 3.0.0 <= 3.0.25rc3 MS-RPC Remote Shell Command Execution Vulnerability - Active Check,Medium,6.0,CVE-2007-2447,,99,,445,tcp,,,"Samba is prone to a vulnerability that allows attackers to
+  execute arbitrary shell commands because the software fails to sanitize user-supplied input.","Updates are available. Please see the referenced vendor
+  advisory.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108011,2026-10-20T22:19:04Z,1,CVE-2007-2447,0.49759,No,1,34.46,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+da795529-a7e1-4c35-ad4a-1ae88c621f85,MS2,172.16.220.140,Greenbone/OpenVAS,HTTP Debugging Methods (TRACE/TRACK) Enabled,Medium,5.8,"CVE-2003-1567,CVE-2004-2320,CVE-2004-2763,CVE-2005-3398,CVE-2006-4683,CVE-2007-3008,CVE-2008-7253,CVE-2009-2823,CVE-2010-0386,CVE-2012-2223,CVE-2014-7883",,99,,80,tcp,,,"The remote web server supports the TRACE and/or TRACK
+  methods. TRACE and TRACK are HTTP methods which are used to debug web server connections.","Disable the TRACE and TRACK methods in your web server
+  configuration.
+
+  Please see the manual of your web server or the references for more information.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.11213,2026-10-20T22:19:04Z,11,CVE-2003-1567;CVE-2004-2320;CVE-2004-2763;CVE-2005-3398;CVE-2006-4683;CVE-2007-3008;CVE-2008-7253;CVE-2009-2823;CVE-2010-0386;CVE-2012-2223;CVE-2014-7883,0.37022,No,1,32.55,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+fa2f1a1f-cfcb-4833-ad83-eb652cf821cd,MS2,172.16.220.140,Greenbone/OpenVAS,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,Medium,6.8,"CVE-2011-0411,CVE-2011-1430,CVE-2011-1431,CVE-2011-1432,CVE-2011-1506,CVE-2011-1575,CVE-2011-1926,CVE-2011-2165",,99,,25,tcp,,,"Multiple vendors' implementations of 'STARTTLS' are prone to a
+  vulnerability that lets attackers inject arbitrary commands.","Updates are available. Please see the references for more
+  information.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103935,2026-10-20T22:19:04Z,8,CVE-2011-0411;CVE-2011-1430;CVE-2011-1431;CVE-2011-1432;CVE-2011-1506;CVE-2011-1575;CVE-2011-1926;CVE-2011-2165,0.33341,No,1,32.0,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+8a0c4ef5-a145-4c31-ba30-9c9c547771f4,MS2,172.16.220.140,Greenbone/OpenVAS,/doc directory browsable,Medium,5.0,CVE-1999-0678,,80,,80,tcp,,,"The /doc directory is browsable.
+  /doc shows the content of the /usr/doc directory and therefore it shows which programs and - important! - the version of the installed programs.","Use access restrictions for the /doc directory.
+  If you use Apache you might use this in your access.conf:
+
+  <Directory /usr/doc>
+  AllowOverride None
+  order deny, allow
+  deny from all
+  allow from localhost
+  </Directory>",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.10056,2026-10-20T22:19:04Z,1,CVE-1999-0678,0.31408,No,1,31.71,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+1c187fea-c53f-4bf3-8577-08de8a9088b6,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE),Low,3.4,CVE-2014-3566,,80,,5432,tcp,,,This host is prone to an information disclosure vulnerability.,"Possible Mitigations are:
+
+  - Disable SSLv3
+
+  - Disable cipher suites supporting CBC cipher modes
+
+  - Enable TLS_FALLBACK_SCSV if the service is providing TLSv1.0+",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.802087,2026-10-20T22:19:04Z,1,CVE-2014-3566,0.99999,No,1,30.0,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+564bcc14-d72e-4ac8-a7cf-b51ce03fa9b3,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE),Low,3.4,CVE-2014-3566,,80,,25,tcp,,,This host is prone to an information disclosure vulnerability.,"Possible Mitigations are:
+
+  - Disable SSLv3
+
+  - Disable cipher suites supporting CBC cipher modes
+
+  - Enable TLS_FALLBACK_SCSV if the service is providing TLSv1.0+",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.802087,2026-10-20T22:19:04Z,1,CVE-2014-3566,0.99999,No,1,30.0,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+f4ebaa8f-58d8-4eb1-9515-6058fa0ecb02,WEB01,172.16.220.137,Greenbone/OpenVAS,TCP Timestamps Information Disclosure,Low,2.6,,,80,,,,,,"The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.",report-de7c1f42-eb94-414f-a151-415a4b9b1827.csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.80091,2026-10-21T15:37:44Z,0,,,No,4,30,P4,No CVE reference,2026-10-25T09:42:08.176910+00:00
+e9a35dae-3575-4782-bcb4-b7792d0e63e5,WEB01,172.16.220.137,Greenbone/OpenVAS,Weak MAC Algorithm(s) Supported (SSH),Low,2.6,,,80,,22,tcp,,,"The remote SSH server is configured to allow / support weak MAC
+  algorithm(s).",Disable the reported weak MAC algorithm(s).,report-de7c1f42-eb94-414f-a151-415a4b9b1827.csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.105610,2026-10-21T15:37:44Z,0,,,No,4,30,P4,No CVE reference,2026-10-25T09:42:08.176910+00:00
+ZAP-5b6dfa530801b129,WEB01,172.16.220.137,OWASP ZAP,"Server Leaks Version Information via ""Server"" HTTP Response Header Field",Low,,,CWE-497,,High,,,GET,http://172.16.220.137:5000/static/style.css,"The web/application server is leaking version information via the ""Server"" HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.","Ensure that your web server, application server, load balancer, etc. is configured to suppress the ""Server"" header or provide generic details.",2026-10-24-ZAP-Report-.html,Open,,,,0,,,No,4,30,P4,No CVE reference,2026-10-25T09:42:08.176910+00:00
+ZAP-d04e9ebd6c5df4ec,WEB01,172.16.220.137,OWASP ZAP,X-Content-Type-Options Header Missing,Low,,,CWE-693,,Medium,,,GET,http://172.16.220.137:5000/static/style.css,"The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.","Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages. If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.",2026-10-24-ZAP-Report-.html,Open,,,,0,,,No,4,30,P4,No CVE reference,2026-10-25T09:42:08.176910+00:00
+8332248b-d3b1-4f29-a680-dd90e68a5dfb,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: DHE_EXPORT MITM Security Bypass Vulnerability (LogJam),Low,3.7,CVE-2015-4000,,80,,25,tcp,,,"This host is accepting 'DHE_EXPORT' cipher suites and is prone
+  to a man-in-the-middle (MITM) vulnerability.","'- Remove support for 'DHE_EXPORT' cipher
+  suites from the service. Please see the references for more resources supporting you with this
+  task.
+
+  - If the service is using OpenSSL: Update to version 1.0.1n, 1.0.2b or later.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.805188,2026-10-20T22:19:04Z,1,CVE-2015-4000,0.9986,No,1,29.98,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+bbe21414-22c2-4e56-822b-da030f90bbd8,MS2,172.16.220.140,Greenbone/OpenVAS,jQuery < 1.6.3 XSS Vulnerability,Medium,4.3,CVE-2011-4969,,80,,80,tcp,,,"jQuery is prone to a cross-site scripting (XSS)
+  vulnerability.",Update to version 1.6.3 or later.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.141637,2026-10-20T22:19:04Z,1,CVE-2011-4969,0.19191,No,1,29.88,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+b5e6d62d-9486-4f2a-875c-ff25b6507d01,MS2,172.16.220.140,Greenbone/OpenVAS,jQuery < 1.9.0 XSS Vulnerability,Medium,6.1,CVE-2012-6708,,80,,80,tcp,,,"jQuery is prone to a cross-site scripting (XSS)
+  vulnerability.",Update to version 1.9.0 or later.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.141636,2026-10-20T22:19:04Z,1,CVE-2012-6708,0.08632,No,1,28.29,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+5f4a4e1f-0422-4f93-a427-ce54c390e7dc,MS2,172.16.220.140,Greenbone/OpenVAS,phpinfo() Output Reporting (HTTP),Medium,5.3,"CVE-2008-0149,CVE-2023-49282,CVE-2023-49283,CVE-2024-10486",,80,,80,tcp,,,"Reporting of files containing the output of the phpinfo() PHP
+  function previously detected via HTTP.",Delete the listed files or restrict access to them.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.11229,2026-10-20T22:19:04Z,4,CVE-2008-0149;CVE-2023-49282;CVE-2023-49283;CVE-2024-10486,0.07543,No,1,28.13,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+2f0af630-51a6-43ce-b01f-9b355badd020,MS2,172.16.220.140,Greenbone/OpenVAS,Anonymous FTP Login Reporting,Medium,6.4,CVE-1999-0497,,80,,21,tcp,,,Reports if the remote FTP Server allows anonymous logins.,"If you do not want to share files, you should disable anonymous
+  logins.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.900600,2026-10-20T22:19:04Z,1,CVE-1999-0497,0.0722,No,1,28.08,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+045ad0d4-f52b-4d8f-af7b-709106ece8da,MS2,172.16.220.140,Greenbone/OpenVAS,phpMyAdmin error.php Cross Site Scripting Vulnerability,Medium,4.3,CVE-2010-4480,,99,,80,tcp,,,phpMyAdmin is prone to a cross-site scripting (XSS) vulnerability.,"No known solution was made available for at least one year since the disclosure
+  of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer
+  release, disable respective features, remove the product or replace the product by another one.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.801660,2026-10-20T22:19:04Z,1,CVE-2010-4480,0.05829,No,1,27.87,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+4ed6e9d8-0b9d-422f-bbee-18f9108cabeb,MS2,172.16.220.140,Greenbone/OpenVAS,QWikiwiki directory traversal vulnerability,Medium,5.0,CVE-2005-0283,,99,,80,tcp,,,"The remote host is running QWikiwiki, a Wiki application written in PHP.
+
+  The remote version of this software contains a validation input flaw which may allow an attacker
+  to use it to read arbitrary files on the remote host with the privileges of the web server.","No known solution was made available for at least one year since the disclosure
+  of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer
+  release, disable respective features, remove the product or replace the product by another one.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.16100,2026-10-20T22:19:04Z,1,CVE-2005-0283,0.0307,No,1,27.46,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+1f6f1770-088d-4604-b49e-37887a76750e,MS2,172.16.220.140,Greenbone/OpenVAS,TWiki < 6.1.0 XSS Vulnerability,Medium,6.1,CVE-2018-20212,,80,,80,tcp,,,bin/statistics in TWiki 6.0.2 allows XSS via the webs parameter.,Update to version 6.1.0 or later.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.141830,2026-10-20T22:19:04Z,1,CVE-2018-20212,0.01586,No,1,27.24,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+e3dbdfde-3e02-408c-87c4-b3888cdd0b63,MS2,172.16.220.140,Greenbone/OpenVAS,TWiki CSRF Vulnerability,Medium,6.0,CVE-2009-1339,,80,,80,tcp,,,TWiki is prone to a cross-site request forgery (CSRF) vulnerability.,Upgrade to version 4.3.1 or later.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.800400,2026-10-20T22:19:04Z,1,CVE-2009-1339,0.00748,No,1,27.11,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+91041303-8240-4ec7-99f2-6cfdc01afb12,MS2,172.16.220.140,Greenbone/OpenVAS,TWiki Cross-Site Request Forgery Vulnerability (Sep 2010),Medium,6.8,CVE-2009-4898,,80,,80,tcp,,,TWiki is prone to a cross-site request forgery (CSRF) vulnerability.,Upgrade to TWiki version 4.3.2 or later.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.801281,2026-10-20T22:19:04Z,1,CVE-2009-4898,0.00578,No,1,27.09,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+0df44630-564a-410e-b3d3-a8436abd90ef,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Server Certificate / Certificate in Chain with RSA keys less than 2048 bits,Medium,5.3,,,80,,25,tcp,,,"The remote SSL/TLS server certificate and/or any of the
+  certificates in the certificate chain is using a RSA key with less than 2048 bits.","Replace the certificate with a stronger key and reissue the
+  certificates it signed.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.150710,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+ad4cf3c3-4631-4912-8e86-b314b96661ac,MS2,172.16.220.140,Greenbone/OpenVAS,Weak Key Exchange (KEX) Algorithm(s) Supported (SSH),Medium,5.3,,,80,,22,tcp,,,"The remote SSH server is configured to allow / support weak key
+  exchange (KEX) algorithm(s).","Disable the reported weak KEX algorithm(s)
+
+  - 1024-bit MODP group / prime KEX algorithms:
+
+  Alternatively use elliptic-curve Diffie-Hellmann in general, e.g. Curve 25519.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.150713,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+46a52904-e93e-4ca4-82bf-fd29f1ddddb3,MS2,172.16.220.140,Greenbone/OpenVAS,Weak Host Key Algorithm(s) (SSH),Medium,5.3,,,80,,22,tcp,,,"The remote SSH server is configured to allow / support weak host
+  key algorithm(s).",Disable the reported weak host key algorithm(s).,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.117687,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+6ca1ad8c-aa39-4c12-997d-01438de50bd1,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Server Certificate / Certificate in Chain with RSA keys less than 2048 bits,Medium,5.3,,,80,,5432,tcp,,,"The remote SSL/TLS server certificate and/or any of the
+  certificates in the certificate chain is using a RSA key with less than 2048 bits.","Replace the certificate with a stronger key and reissue the
+  certificates it signed.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.150710,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+69502c21-f230-419b-9944-8c44a32a4579,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Certificate Expired,Medium,5.0,,,99,,5432,tcp,,,The remote server's SSL/TLS certificate has already expired.,Replace the SSL/TLS certificate by a new one.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103955,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+3df2565f-d1cc-4d11-8afd-fadcc0290986,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Certificate Expired,Medium,5.0,,,99,,25,tcp,,,The remote server's SSL/TLS certificate has already expired.,Replace the SSL/TLS certificate by a new one.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103955,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+127d4b30-2bf7-4cb5-b780-782147f2df61,MS2,172.16.220.140,Greenbone/OpenVAS,awiki <= 20100125 Multiple LFI Vulnerabilities - Active Check,Medium,5.0,,,99,,80,tcp,,,"awiki is prone to multiple local file include (LFI)
+  vulnerabilities because it fails to properly sanitize user-supplied input.","No known solution was made available for at least one year
+  since the disclosure of this vulnerability. Likely none will be provided anymore. General
+  solution options are to upgrade to a newer release, disable respective features, remove the
+  product or replace the product by another one.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103210,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+1471ebef-51a0-4420-9c7d-61851ba5968f,MS2,172.16.220.140,Greenbone/OpenVAS,Check if Mailserver answer to VRFY and EXPN requests,Medium,5.0,,,99,,25,tcp,,,The Mailserver on this host answers to VRFY and/or EXPN requests.,"Disable VRFY and/or EXPN on your Mailserver.
+
+  For postfix add 'disable_vrfy_command=yes' in 'main.cf'.
+
+  For Sendmail add the option 'O PrivacyOptions=goaway'.
+
+  It is suggested that, if you really want to publish this type of information, you use a mechanism
+  that legitimate users actually know about, such as Finger or HTTP.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.100072,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+9f9be9ab-1671-4db7-b987-9b43aff428b3,MS2,172.16.220.140,Greenbone/OpenVAS,VNC Server Unencrypted Data Transmission,Medium,4.8,,,70,,5900,tcp,,,"The remote host is running a VNC server providing one or more insecure or
+  cryptographically weak Security Type(s) not intended for use on untrusted networks.","Run the session over an encrypted channel provided by IPsec [RFC4301] or SSH [RFC4254].
+  Some VNC server vendors are also providing more secure Security Types within their products.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108529,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+57cfb455-6a59-45d0-b9fc-3494758b6678,MS2,172.16.220.140,Greenbone/OpenVAS,FTP Unencrypted Cleartext Login,Medium,4.8,,,70,,2121,tcp,,,"The remote host is running a FTP service that allows cleartext logins over
+  unencrypted connections.","Enable FTPS or enforce the connection via the 'AUTH TLS' command. Please see
+  the manual of the FTP service for more information.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108528,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+83a79473-b35c-432c-bbdc-f67c4bb98dd6,MS2,172.16.220.140,Greenbone/OpenVAS,Cleartext Transmission of Sensitive Information via HTTP,Medium,4.8,,,80,,80,tcp,,,"The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108440,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+41f7315e-eb4c-4411-b0eb-2afc371957e6,MS2,172.16.220.140,Greenbone/OpenVAS,FTP Unencrypted Cleartext Login,Medium,4.8,,,70,,21,tcp,,,"The remote host is running a FTP service that allows cleartext logins over
+  unencrypted connections.","Enable FTPS or enforce the connection via the 'AUTH TLS' command. Please see
+  the manual of the FTP service for more information.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108528,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+d7c475c1-33fe-46f6-bdb8-5e00d0d6b81f,MS2,172.16.220.140,Greenbone/OpenVAS,Telnet Unencrypted Cleartext Login,Medium,4.8,,,70,,23,tcp,,,"The remote host is running a Telnet service that allows cleartext logins over
+  unencrypted connections.",Replace Telnet with a protocol like SSH which supports encrypted connections.,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.108522,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+72aa438c-9ff1-40a5-a33d-715d978dbd83,MS2,172.16.220.140,Greenbone/OpenVAS,Weak Encryption Algorithm(s) Supported (SSH),Medium,4.3,,,80,,22,tcp,,,"The remote SSH server is configured to allow / support weak
+  encryption algorithm(s).",Disable the reported weak encryption algorithm(s).,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.105611,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+2e2571de-4349-45a0-b21b-32ca6cae5223,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,Medium,4.0,,,80,,25,tcp,,,"The SSL/TLS service uses Diffie-Hellman groups with insufficient
+  strength (key size < 2048).","'- Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group. Please see the references for more resources
+  supporting you with this task.
+
+  - For Apache Web Servers: Beginning with version 2.4.7, mod_ssl will use DH parameters which
+  include primes with lengths of more than 1024 bits.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.106223,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+7d4aa440-881b-401a-a967-63cde97cd801,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,Medium,4.0,,,80,,5432,tcp,,,"The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.105880,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+5d36526b-d5df-431f-b0a7-10d83ff76477,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,Medium,4.0,,,80,,25,tcp,,,"The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.105880,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+e64d6b4a-08a6-4bed-9cd6-ae6f920d8b90,MS2,172.16.220.140,Greenbone/OpenVAS,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,Medium,4.0,,,80,,5432,tcp,,,"The SSL/TLS service uses Diffie-Hellman groups with insufficient
+  strength (key size < 2048).","'- Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group. Please see the references for more resources
+  supporting you with this task.
+
+  - For Apache Web Servers: Beginning with version 2.4.7, mod_ssl will use DH parameters which
+  include primes with lengths of more than 1024 bits.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.106223,2026-10-20T22:19:04Z,0,,,No,1,27,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+96c1b7fd-5a78-4426-824b-7fa35de1e084,MS2,172.16.220.140,Greenbone/OpenVAS,ICMP Timestamp Reply Information Disclosure,Low,2.1,CVE-1999-0524,,80,,,,,,The remote host responded to an ICMP timestamp request.,"Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.103190,2026-10-20T22:19:04Z,1,CVE-1999-0524,0.32154,No,1,19.82,Lab / Accepted Exposure,EPSS available,2026-10-25T09:42:08.176910+00:00
+de0f7793-67c4-4557-b0a4-d5f1cfa3d2f5,MS2,172.16.220.140,Greenbone/OpenVAS,TCP Timestamps Information Disclosure,Low,2.6,,,80,,,,,,"The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.",report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.80091,2026-10-20T22:19:04Z,0,,,No,1,15,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00
+4e0909df-9f2d-497e-8572-311747c5dd73,MS2,172.16.220.140,Greenbone/OpenVAS,Weak MAC Algorithm(s) Supported (SSH),Low,2.6,,,80,,22,tcp,,,"The remote SSH server is configured to allow / support weak MAC
+  algorithm(s).",Disable the reported weak MAC algorithm(s).,report-73ffdc19-cd77-4281-8bc9-4313deb76e22(1).csv,Open,Baseline,1.3.6.1.4.1.25623.1.0.105610,2026-10-20T22:19:04Z,0,,,No,1,15,Lab / Accepted Exposure,No CVE reference,2026-10-25T09:42:08.176910+00:00

@@ -1,0 +1,336 @@
+{
+  "__inputs": [
+    {
+      "name": "DS_PATCHPROOF",
+      "label": "PatchProof PostgreSQL",
+      "description": "Select your existing PostgreSQL datasource",
+      "type": "datasource",
+      "pluginId": "grafana-postgresql-datasource",
+      "pluginName": "PostgreSQL"
+    }
+  ],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "11.0.0"
+    },
+    {
+      "type": "datasource",
+      "id": "grafana-postgresql-datasource",
+      "name": "PostgreSQL",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "stat",
+      "name": "Stat",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "bargauge",
+      "name": "Bar gauge",
+      "version": ""
+    }
+  ],
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "id": 1,
+      "title": "01 | FINDINGS REQUIRING REVIEW",
+      "type": "stat",
+      "description": "Operational scanner records awaiting review or remediation. Excludes intentionally vulnerable MS2. Does not imply complete vulnerability coverage.",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${DS_PATCHPROOF}"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${DS_PATCHPROOF}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT requiring_review AS \"Operational findings to review\" FROM pp_exec_exposure;"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 9
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "value_and_name",
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "wideLayout": true
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "orange"
+          },
+          "unit": "none",
+          "decimals": 0,
+          "min": 0,
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "transparent": false,
+      "pluginVersion": "11.0.0"
+    },
+    {
+      "id": 2,
+      "title": "02 | ASSESSMENT COVERAGE",
+      "type": "bargauge",
+      "description": "Documented assessment status for business assets (0=Gap, 1=Partial, 2=Complete). Not a scan percentage or security grade. Update pp_assessments only when new evidence exists.",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${DS_PATCHPROOF}"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${DS_PATCHPROOF}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT asset || ' \u00b7 ' || initcap(coverage) AS metric, CASE coverage WHEN 'gap' THEN 0 WHEN 'partial' THEN 1 WHEN 'complete' THEN 2 END AS value FROM pp_exec_assurance ORDER BY CASE criticality WHEN 'Critical' THEN 1 WHEN 'High' THEN 2 ELSE 3 END;"
+        }
+      ],
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 12,
+        "h": 9
+      },
+      "options": {
+        "orientation": "horizontal",
+        "displayMode": "gradient",
+        "showUnfilled": true,
+        "minVizWidth": 15,
+        "minVizHeight": 25,
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": ""
+        },
+        "valueMode": "color"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "min": 0,
+          "max": 2,
+          "decimals": 0,
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 1
+              },
+              {
+                "color": "green",
+                "value": 2
+              }
+            ]
+          },
+          "mappings": [
+            {
+              "type": "value",
+              "options": {
+                "0": {
+                  "text": "ASSESSMENT GAP",
+                  "color": "red"
+                },
+                "1": {
+                  "text": "PARTIAL COVERAGE",
+                  "color": "orange"
+                },
+                "2": {
+                  "text": "COVERAGE COMPLETE",
+                  "color": "green"
+                }
+              }
+            }
+          ]
+        },
+        "overrides": []
+      },
+      "transparent": false,
+      "pluginVersion": "11.0.0"
+    },
+    {
+      "id": 3,
+      "title": "03 | KNOWN EXPLOITATION SIGNAL",
+      "type": "stat",
+      "description": "Distinct KEV CVEs in current operational imported findings only. A zero is not proof of absence; authenticated Nessus results are not yet imported.",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${DS_PATCHPROOF}"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${DS_PATCHPROOF}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COALESCE(MAX(unique_kev_cves) FILTER (WHERE asset_class='operational'),0) AS \"Operational KEV CVEs\" FROM pp_exec_kev;"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 9,
+        "w": 12,
+        "h": 9
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "value_and_name",
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "wideLayout": true
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "blue"
+          },
+          "decimals": 0,
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "transparent": false,
+      "pluginVersion": "11.0.0"
+    },
+    {
+      "id": 4,
+      "title": "04 | VERIFIED REMEDIATION",
+      "type": "stat",
+      "description": "Count of findings with verified state AND a recorded post-remediation evidence reference. A zero means no verification evidence is recorded.",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${DS_PATCHPROOF}"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${DS_PATCHPROOF}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT verified_with_evidence AS \"Verified fixes\" FROM pp_exec_remediation;"
+        }
+      ],
+      "gridPos": {
+        "x": 12,
+        "y": 9,
+        "w": 12,
+        "h": 9
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "value_and_name",
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "wideLayout": true
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "orange"
+          },
+          "decimals": 0,
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "transparent": false,
+      "pluginVersion": "11.0.0"
+    }
+  ],
+  "refresh": "5m",
+  "schemaVersion": 39,
+  "tags": [
+    "PatchProof",
+    "Executive",
+    "Vulnerability Management"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "PatchProof | Executive Cyber Risk \u2014 Evidence Driven",
+  "uid": "patchproof-executive-live",
+  "version": 1,
+  "weekStart": "",
+  "description": "Dynamic PostgreSQL executive reporting. Partial Greenbone/ZAP coverage; Nessus data not imported. Training host MS2 is excluded from operational counts. No verified remediation until post-fix evidence is recorded."
+}
